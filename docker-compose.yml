@@ -1,0 +1,15 @@
+# Ein einzelner Service — reine Startbequemlichkeit für den einen Container aus dem
+# Dockerfile (Frontend+Backend zusammen), kein zweiter Container. Siehe
+# docs/adr/0004-docker-single-container-deployment.md.
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/tierlexikon.db
+    volumes:
+      - tierlexikon-data:/app/data
+
+volumes:
+  tierlexikon-data:

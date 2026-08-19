@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Platzhalterbild: Säugetier">
+  <rect width="400" height="300" fill="#e0c097" />
+  <ellipse cx="200" cy="160" rx="80" ry="55" fill="#8b5e34"/>
+  <circle cx="140" cy="110" r="30" fill="#8b5e34"/>
+  <circle cx="120" cy="90" r="14" fill="#8b5e34"/>
+  <circle cx="160" cy="90" r="14" fill="#8b5e34"/>
+  <circle cx="130" cy="112" r="4" fill="#2b1d0e"/>
+  <circle cx="150" cy="112" r="4" fill="#2b1d0e"/>
+  <text x="200" y="245" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#3a2a17">Säugetier</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#5c4327">Kein Foto vorhanden</text>
+</svg>

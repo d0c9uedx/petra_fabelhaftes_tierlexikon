@@ -5,8 +5,16 @@ Ein digitales Tierlexikon: Nutzer:innen durchstöbern Tiere nach Kategorien, seh
 ## Language
 
 **Steckbrief**:
-Die kompakte Profil-Darstellung eines Tiers mit allen Datenfeldern (Name, wissenschaftlicher Name, Kategorie, Lebensraum, Gefährdungsstatus, Fortpflanzung, Ernährung, natürliche Feinde, Sozialverhalten, Charaktereigenschaften).
+Die kompakte Profil-Darstellung eines Tiers mit allen Datenfeldern (Name, wissenschaftlicher Name, Kategorie, Zuhause, Gefährdungsstatus, Fortpflanzung, Wartezeit aufs Baby, Kinderschar, Lieblingsspeise, Erzfeinde, Gesellschaftsleben, Persönlichkeit, Superkraft, Funfakt, Balzzeit, Nestbau, Tanz der Liebe, Beziehungsstatus).
 _Avoid_: Profil, Karte, Datenblatt
+
+**Beziehungsstatus**:
+Ob ein Tier monogam, mit wechselnden Liebhabern oder im Harem lebt. Bleibt explizit leer (nicht "unbekannt" im Sinne einer Datenlücke), wenn die Art keine klassifizierbare Paarbindung hat — das betrifft z. B. viele Fische und Insekten ohne Balz-/Paarbindungsverhalten.
+_Avoid_: Paarungssystem, Sozialstruktur (das ist Gesellschaftsleben)
+
+**Superkraft**:
+Die Verteidigungs- oder Überlebensstrategie eines Tiers, insbesondere gegen seine Erzfeinde (z. B. Tarnung, Gift, Geschwindigkeit). Abzugrenzen von Funfakt, der ein beliebiges interessantes Detail sein kann.
+_Avoid_: Fähigkeit, Talent
 
 **Kategorie**:
 Eine von fünf festen Gruppen, nach denen Tiere eingeordnet und gefiltert werden: Vögel, Fische, Käfer/Insekten, Säugetiere, sonstige Landtiere.

@@ -1,5 +1,9 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.config import get_settings
 from app.routers import animals, auth, categories, daily_animal, discover, progress, quiz
@@ -28,3 +32,22 @@ app.include_router(quiz.router)
 @app.get("/health", tags=["health"])
 def health():
     return {"status": "ok"}
+
+
+# Im Single-Container-Deployment (siehe docs/adr/0004) kopiert das Docker-Image den
+# gebauten Frontend-Build hierher; im lokalen Dev-Workflow (`uvicorn --reload` ohne
+# Frontend-Build) existiert das Verzeichnis nicht, und dieser Block bleibt komplett inaktiv.
+FRONTEND_DIST = Path(__file__).parent / "static_frontend"
+
+if FRONTEND_DIST.is_dir():
+    app.mount("/assets", StaticFiles(directory=FRONTEND_DIST / "assets"), name="frontend-assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    def serve_frontend(full_path: str):
+        """SPA-Fallback: liefert existierende Build-Dateien aus, sonst index.html
+        (React-Router übernimmt clientseitig). Wird zuletzt registriert, damit die
+        API-Router oben immer Vorrang behalten."""
+        candidate = FRONTEND_DIST / full_path
+        if full_path and candidate.is_file():
+            return FileResponse(candidate)
+        return FileResponse(FRONTEND_DIST / "index.html")

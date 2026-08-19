@@ -18,22 +18,30 @@ export interface AnimalListItem {
   seen: boolean;
 }
 
+export type RelationshipStatus = "monogam" | "wechselnde_liebhaber" | "harem";
+
 export interface Animal {
   id: number;
   name_de: string;
   name_scientific: string;
   image_url: string;
   category: AnimalCategory;
-  habitat: string;
+  home_turf: string;
   conservation_status: string;
   reproduction_mode: "egg_laying" | "live_bearing";
-  offspring_count: string;
-  gestation_period: string;
-  diet: string;
-  natural_enemies: string;
-  social_behavior: "solitary" | "herd";
+  offspring_brood: string;
+  baby_wait_time: string;
+  favorite_food: string;
+  arch_enemies: string;
+  social_life: "solitary" | "herd";
   group_size: string | null;
-  character_traits: string;
+  personality: string;
+  fun_fact: string | null;
+  superpower: string | null;
+  mating_season: string | null;
+  nest_building: string | null;
+  courtship_dance: string | null;
+  relationship_status: RelationshipStatus | null;
 }
 
 export interface User {

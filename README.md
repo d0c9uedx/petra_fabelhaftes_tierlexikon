@@ -2,7 +2,7 @@
 
 Ein digitales Tierlexikon: Tiere nach Kategorien durchstöbern, Steckbriefe ansehen, sammeln und im Quiz mit Spaced Repetition üben.
 
-Dies ist der **erste Entwurf** (Scaffold) — die Struktur trägt bereits alle geplanten Features, die eigentliche Tierdatenbank (150 Arten) wird im nächsten Schritt befüllt. Aktuell sind 10 Beispieltiere über alle Kategorien geseedet.
+Dies ist der **erste Entwurf** (Scaffold) — die Struktur trägt bereits alle geplanten Features. Die Tierdatenbank ist mit 300 Arten befüllt (60 je Kategorie).
 
 Hintergrund und Domänenbegriffe: siehe [CONTEXT.md](./CONTEXT.md). Architekturentscheidungen: siehe [docs/adr/](./docs/adr/).
 
@@ -11,7 +11,17 @@ Hintergrund und Domänenbegriffe: siehe [CONTEXT.md](./CONTEXT.md). Architekture
 - `backend/` — Python/FastAPI-API, SQLite (via SQLAlchemy + Alembic)
 - `frontend/` — React (Vite + TypeScript)
 
-## Backend starten
+## Mit Docker starten
+
+Baut Frontend und Backend in einem einzigen Container (siehe [docs/adr/0004-docker-single-container-deployment.md](./docs/adr/0004-docker-single-container-deployment.md)), migriert das Schema und seedet die 300 Tiere automatisch beim Start:
+
+```powershell
+docker compose up --build
+```
+
+App läuft dann unter http://localhost:8000 (Frontend + API zusammen). Die SQLite-Datei liegt in einem benannten Docker-Volume (`tierlexikon-data`) und bleibt über Neustarts/Rebuilds erhalten.
+
+## Backend starten (lokal, ohne Docker)
 
 ```powershell
 cd backend
@@ -28,7 +38,7 @@ API läuft dann unter http://localhost:8000, interaktive Doku unter http://local
 
 Tests: `python -m pytest tests/ -v`
 
-## Frontend starten
+## Frontend starten (lokal, ohne Docker)
 
 ```powershell
 cd frontend
@@ -50,6 +60,20 @@ App läuft dann unter http://localhost:5173 (Backend muss parallel laufen).
 
 ## Offene Punkte (nächste Schritte)
 
-- Tierdatenbank auf die vollen 150 Arten aus der Projektskizze erweitern
-- Bildquellen/Lizenzfragen für die finalen Tierbilder klären
+- Echte Tierfotos statt der aktuellen Kategorie-Platzhalterbilder besorgen (Bildquellen/Lizenzfragen klären)
 - Migration auf PostgreSQL, sobald Mehrbenutzerbetrieb produktiv wird
+
+## Docker bauen
+
+Image neu bauen und Container starten:
+
+```powershell
+docker compose down
+docker compose up --build -d
+```
+
+Logs anzeigen:
+
+```powershell
+docker compose logs -f
+```

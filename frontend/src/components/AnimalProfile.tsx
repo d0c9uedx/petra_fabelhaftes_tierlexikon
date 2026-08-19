@@ -1,16 +1,24 @@
 import { useEffect } from "react";
 import { markAnimalSeen } from "../api/animals";
-import type { Animal } from "../types";
+import type { Animal, RelationshipStatus } from "../types";
 
 const REPRODUCTION_LABELS: Record<Animal["reproduction_mode"], string> = {
   egg_laying: "Eier legend",
   live_bearing: "Lebendgebärend",
 };
 
-const SOCIAL_LABELS: Record<Animal["social_behavior"], string> = {
+const SOCIAL_LABELS: Record<Animal["social_life"], string> = {
   solitary: "Einzelgänger",
   herd: "Herdentier",
 };
+
+const RELATIONSHIP_STATUS_LABELS: Record<RelationshipStatus, string> = {
+  monogam: "Monogam",
+  wechselnde_liebhaber: "Wechselnde Liebhaber",
+  harem: "Harem",
+};
+
+const UNBEKANNT = "Noch unbekannt";
 
 /**
  * Zeigt den Steckbrief eines Tiers und markiert es beim Anzeigen als gesehen.
@@ -32,34 +40,57 @@ export default function AnimalProfile({ animal }: { animal: Animal }) {
       <p className="animal-profile-scientific">{animal.name_scientific}</p>
 
       <dl className="animal-profile-facts">
-        <dt>Lebensraum</dt>
-        <dd>{animal.habitat}</dd>
+        <dt>Zuhause</dt>
+        <dd>{animal.home_turf}</dd>
 
         <dt>Gefährdungsstatus</dt>
         <dd>{animal.conservation_status}</dd>
 
         <dt>Fortpflanzung</dt>
+        <dd>{REPRODUCTION_LABELS[animal.reproduction_mode]}</dd>
+
+        <dt>Wartezeit aufs Baby</dt>
+        <dd>{animal.baby_wait_time}</dd>
+
+        <dt>Kinderschar</dt>
+        <dd>{animal.offspring_brood}</dd>
+
+        <dt>Lieblingsspeise</dt>
+        <dd>{animal.favorite_food}</dd>
+
+        <dt>Erzfeinde</dt>
+        <dd>{animal.arch_enemies}</dd>
+
+        <dt>Gesellschaftsleben</dt>
         <dd>
-          {REPRODUCTION_LABELS[animal.reproduction_mode]}, {animal.gestation_period}
-        </dd>
-
-        <dt>Nachkommen</dt>
-        <dd>{animal.offspring_count}</dd>
-
-        <dt>Ernährung</dt>
-        <dd>{animal.diet}</dd>
-
-        <dt>Natürliche Feinde</dt>
-        <dd>{animal.natural_enemies}</dd>
-
-        <dt>Sozialverhalten</dt>
-        <dd>
-          {SOCIAL_LABELS[animal.social_behavior]}
+          {SOCIAL_LABELS[animal.social_life]}
           {animal.group_size ? ` (Gruppengröße: ${animal.group_size})` : ""}
         </dd>
 
-        <dt>Charakter</dt>
-        <dd>{animal.character_traits}</dd>
+        <dt>Persönlichkeit</dt>
+        <dd>{animal.personality}</dd>
+
+        <dt>Superkraft</dt>
+        <dd>{animal.superpower ?? UNBEKANNT}</dd>
+
+        <dt>Funfakt</dt>
+        <dd>{animal.fun_fact ?? UNBEKANNT}</dd>
+
+        <dt>Balzzeit</dt>
+        <dd>{animal.mating_season ?? UNBEKANNT}</dd>
+
+        <dt>Nestbau</dt>
+        <dd>{animal.nest_building ?? UNBEKANNT}</dd>
+
+        <dt>Tanz der Liebe</dt>
+        <dd>{animal.courtship_dance ?? UNBEKANNT}</dd>
+
+        <dt>Beziehungsstatus</dt>
+        <dd>
+          {animal.relationship_status
+            ? RELATIONSHIP_STATUS_LABELS[animal.relationship_status]
+            : UNBEKANNT}
+        </dd>
       </dl>
     </article>
   );

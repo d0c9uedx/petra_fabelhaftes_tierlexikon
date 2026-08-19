@@ -1,177 +1,127 @@
-"""Befüllt die Datenbank mit einer Handvoll Beispieltieren.
+"""Befüllt die Datenbank mit den 300 Steckbriefen aus data/tierlexikon_steckbriefe.json.
 
-Dies ist NICHT die vollständige Tierdatenbank (siehe Projektskizze, geplante
-150 Arten) — das folgt im nächsten Schritt. Hier reichen ~10 Tiere über alle
-Kategorien, damit Weiterklick, Tages-Tier, Cooldown und die Quiz-Distraktoren
-im Erstentwurf sinnvoll durchgespielt werden können.
+Die Quelldatei liefert pro Tier größtenteils Freitext (siehe `tierlexikon-app-projektskizze.md`),
+kein festes Vokabular für `fortpflanzung`/`gesellschaftsleben` und keine Bild-URLs. Die
+Zuordnung auf die strikten Modell-Enums (`ReproductionMode`, `SocialBehavior`) sowie die
+Bild-Platzhalter-Strategie sind bewusste, dokumentierte Entscheidungen — siehe
+docs/adr/0005-tierdaten-mapping-heuristik.md für die Begründung und Grenzfälle.
+
+Die sechs neuen "Liebesleben"/Charakter-Zusatzfelder (`funfakt`, `superkraft`, `balzzeit`,
+`nestbau`, `tanz_der_liebe`, `beziehungsstatus`) sind dagegen direkt mit dem passenden
+Wert recherchiert/verfasst worden statt aus Freitext geparst — `beziehungsstatus` wird
+deshalb 1:1 auf den `RelationshipStatus`-Enum abgebildet, ohne Heuristik. Fehlt eine
+Information (auch nach Recherche), bleibt der JSON-Wert `null` — siehe
+docs/adr/0006-neue-steckbrief-felder-nullable.md.
 
 Ausführen mit: python -m app.seed.seed_data
 """
-from app.database import Base, SessionLocal, engine
-from app.models.animal import Animal, AnimalCategory, ReproductionMode, SocialBehavior
+import json
+from pathlib import Path
 
-ANIMALS: list[dict] = [
-    dict(
-        name_de="Kapibara",
-        name_scientific="Hydrochoerus hydrochaeris",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/2/29/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG",
-        category=AnimalCategory.SAEUGETIER,
-        habitat="Ufernähe von Flüssen und Sümpfen, Süd- und Mittelamerika",
-        conservation_status="nicht gefährdet, Bestand stabil",
-        reproduction_mode=ReproductionMode.LIVE_BEARING,
-        offspring_count="meist 3–5 Jungtiere pro Wurf",
-        gestation_period="ca. 5 Monate",
-        diet="Wasserpflanzen, Gräser, Rinde",
-        natural_enemies="Jaguare, Kaimane, Anakondas, Greifvögel",
-        social_behavior=SocialBehavior.HERD,
-        group_size="10–20 Tiere",
-        character_traits="Gesellig, friedlich, sehr entspannt und verträglich mit anderen Tieren.",
-    ),
-    dict(
-        name_de="Igel",
-        name_scientific="Erinaceus europaeus",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/4/4e/Erinaceus_europaeus_LC0119.jpg",
-        category=AnimalCategory.SAEUGETIER,
-        habitat="Gärten, Hecken, Waldränder in Europa",
-        conservation_status="gefährdet (Bestand rückläufig)",
-        reproduction_mode=ReproductionMode.LIVE_BEARING,
-        offspring_count="4–5 Jungtiere pro Wurf",
-        gestation_period="ca. 35 Tage",
-        diet="Insekten, Schnecken, Würmer, gelegentlich Fallobst",
-        natural_enemies="Uhu, Dachs, Fuchs",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Nachtaktiv, scheu, rollt sich bei Gefahr zur Stachelkugel zusammen.",
-    ),
-    dict(
-        name_de="Rotkehlchen",
-        name_scientific="Erithacus rubecula",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/8/8d/Erithacus_rubecula_with_worm.jpg",
-        category=AnimalCategory.VOGEL,
-        habitat="Wälder, Gärten und Parks in Europa",
-        conservation_status="nicht gefährdet",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="5–7 Eier pro Gelege",
-        gestation_period="Brutzeit ca. 13–14 Tage",
-        diet="Insekten, Spinnen, Beeren",
-        natural_enemies="Sperber, Katzen, Marder",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Zutraulich, revierbewusst, singt ganzjährig.",
-    ),
-    dict(
-        name_de="Weißstorch",
-        name_scientific="Ciconia ciconia",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/3/3a/White_Stork_%28Ciconia_ciconia%29.jpg",
-        category=AnimalCategory.VOGEL,
-        habitat="Feuchtwiesen und offene Landschaften in Europa, überwintert in Afrika",
-        conservation_status="nicht gefährdet, lokal geschützt",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="3–5 Eier pro Gelege",
-        gestation_period="Brutzeit ca. 33 Tage",
-        diet="Frösche, Insekten, kleine Nagetiere",
-        natural_enemies="Adler, Uhu (v. a. für Jungvögel)",
-        social_behavior=SocialBehavior.HERD,
-        group_size="lockere Kolonien, wenige bis mehrere Paare",
-        character_traits="Ruhig, standorttreu, klappert mit dem Schnabel zur Kommunikation.",
-    ),
-    dict(
-        name_de="Clownfisch",
-        name_scientific="Amphiprion ocellaris",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/5/58/Common_clownfish.jpg",
-        category=AnimalCategory.FISCH,
-        habitat="Korallenriffe im Indopazifik, lebt in Symbiose mit Seeanemonen",
-        conservation_status="nicht gefährdet",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="100–1000 Eier pro Gelege",
-        gestation_period="Eier schlüpfen nach ca. 6–10 Tagen",
-        diet="Plankton, Algen, kleine Krebstiere",
-        natural_enemies="größere Raubfische",
-        social_behavior=SocialBehavior.HERD,
-        group_size="kleine Gruppen an einer Wirtsanemone",
-        character_traits="Territorial rund um die eigene Anemone, wechselt bei Bedarf das Geschlecht.",
-    ),
-    dict(
-        name_de="Hecht",
-        name_scientific="Esox lucius",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/0/09/Esox_lucius1.jpg",
-        category=AnimalCategory.FISCH,
-        habitat="Seen und langsam fließende Flüsse in Europa, Nordasien und Nordamerika",
-        conservation_status="nicht gefährdet",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="mehrere Tausend Eier pro Laichzeit",
-        gestation_period="Eier schlüpfen nach ca. 2 Wochen",
-        diet="Fische, gelegentlich Frösche und Wasservögel",
-        natural_enemies="größere Hechte, Fischotter (v. a. für Jungfische)",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Lauerjäger, territorial, gefräßig.",
-    ),
-    dict(
-        name_de="Siebenpunkt-Marienkäfer",
-        name_scientific="Coccinella septempunctata",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/4/4a/Coccinella_septempunctata.jpg",
-        category=AnimalCategory.INSEKT,
-        habitat="Wiesen, Gärten und Felder in Europa",
-        conservation_status="nicht gefährdet",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="bis zu mehreren Hundert Eiern über die Saison",
-        gestation_period="Larvenentwicklung ca. 3–4 Wochen",
-        diet="Blattläuse und andere kleine Insekten",
-        natural_enemies="Vögel, Spinnen, parasitische Wespen",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Nützlich für den Garten, wehrt Fressfeinde mit bitterem Sekret ab.",
-    ),
-    dict(
-        name_de="Honigbiene",
-        name_scientific="Apis mellifera",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/4/4a/Honeybee-27527-1.jpg",
-        category=AnimalCategory.INSEKT,
-        habitat="Weltweit in Kulturlandschaften, lebt in Völkern in Bienenstöcken",
-        conservation_status="nicht akut gefährdet, aber unter Druck (Pestizide, Parasiten)",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="die Königin legt bis zu 2000 Eier pro Tag",
-        gestation_period="Entwicklung Ei bis Biene ca. 21 Tage",
-        diet="Nektar und Pollen",
-        natural_enemies="Varroamilbe, Hornissen, Bienenfresser",
-        social_behavior=SocialBehavior.HERD,
-        group_size="Völker von mehreren Zehntausend Tieren",
-        character_traits="Hochorganisiert, fleißig, kommuniziert über den Schwänzeltanz.",
-    ),
-    dict(
-        name_de="Feuersalamander",
-        name_scientific="Salamandra salamandra",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/4/4a/Feuersalamander.JPG",
-        category=AnimalCategory.SONSTIGES_LANDTIER,
-        habitat="Feuchte Laubwälder in Mittel- und Südeuropa",
-        conservation_status="nicht gefährdet, lokal durch Pilzerkrankung bedroht",
-        reproduction_mode=ReproductionMode.LIVE_BEARING,
-        offspring_count="20–40 Larven pro Wurf",
-        gestation_period="Trächtigkeit ca. 8–10 Monate",
-        diet="Insekten, Spinnen, Regenwürmer, Schnecken",
-        natural_enemies="Ringelnatter, manche Vögel (Warnfarbe schützt vor vielen Fressfeinden)",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Nachtaktiv, dämmerungsliebend, auffällig gelb-schwarz gefärbt als Warnsignal.",
-    ),
-    dict(
-        name_de="Ringelnatter",
-        name_scientific="Natrix natrix",
-        image_url="https://upload.wikimedia.org/wikipedia/commons/9/95/Natrix_natrix_top.jpg",
-        category=AnimalCategory.SONSTIGES_LANDTIER,
-        habitat="Gewässernähe in Europa, oft in Teichen und Feuchtgebieten",
-        conservation_status="gefährdet (regional unterschiedlich)",
-        reproduction_mode=ReproductionMode.EGG_LAYING,
-        offspring_count="10–30 Eier pro Gelege",
-        gestation_period="Eier schlüpfen nach ca. 6–10 Wochen",
-        diet="Frösche, Kröten, kleine Fische",
-        natural_enemies="Greifvögel, Störche, Füchse",
-        social_behavior=SocialBehavior.SOLITARY,
-        group_size=None,
-        character_traits="Ungiftig, scheu, stellt sich bei Gefahr tot oder gibt Sekret ab.",
-    ),
-]
+from app.database import Base, SessionLocal, engine
+from app.models.animal import (
+    Animal,
+    AnimalCategory,
+    RelationshipStatus,
+    ReproductionMode,
+    SocialBehavior,
+)
+
+DATA_FILE = Path(__file__).parent / "data" / "tierlexikon_steckbriefe.json"
+
+# JSON-`kategorie` -> AnimalCategory. "Nicht-Säugetier" entspricht der Projektskizze-
+# Kategorie "sonstige Landtiere (Nicht-Säugetiere)", z. B. Reptilien, Amphibien, Wirbellose.
+CATEGORY_MAP = {
+    "Vogel": AnimalCategory.VOGEL,
+    "Fisch": AnimalCategory.FISCH,
+    "Insekt": AnimalCategory.INSEKT,
+    "Säugetier": AnimalCategory.SAEUGETIER,
+    "Nicht-Säugetier": AnimalCategory.SONSTIGES_LANDTIER,
+}
+
+# Manueller Sonderfall: der einzige Eintrag, dessen `fortpflanzung`-Text nicht eindeutig
+# mit "Eier legend" oder "lebendgebärend" beginnt (Rochen: "je nach Art Eier legend oder
+# lebendgebärend"). Siehe ADR 0005.
+REPRODUCTION_OVERRIDES: dict[str, ReproductionMode] = {
+    "Rochen": ReproductionMode.EGG_LAYING,
+}
+
+# Schlüsselwörter für die Gesellschaftsleben-Heuristik (ADR 0005). Reihenfolge ist Teil der
+# Regel: "einzelgänger" hat Vorrang vor den Herdentier-Schlüsselwörtern, weil in allen
+# beobachteten Grenzfällen ("überwiegend Einzelgänger, ... teils in Gruppen") die primäre
+# Lebensweise solitär ist und die Gruppenbildung nur eine Ausnahme beschreibt.
+SOLITARY_KEYWORDS = ("einzelgänger",)
+HERD_KEYWORDS = (
+    "gesellig", "schwärm", "kolonie", "sozial", "gruppen", "herde", "rudel",
+    "völker", "volk", "rotten", "rotte", "paaren", "paare", "gemeinschaft",
+)
+
+
+def _map_category(kategorie: str) -> AnimalCategory:
+    return CATEGORY_MAP[kategorie]
+
+
+def _map_reproduction(name_de: str, fortpflanzung: str) -> ReproductionMode:
+    if name_de in REPRODUCTION_OVERRIDES:
+        return REPRODUCTION_OVERRIDES[name_de]
+    if fortpflanzung.startswith("lebendgebärend"):
+        return ReproductionMode.LIVE_BEARING
+    return ReproductionMode.EGG_LAYING
+
+
+def _map_social_behavior(name_de: str, gesellschaftsleben: str) -> SocialBehavior:
+    text = gesellschaftsleben.lower()
+    if any(keyword in text for keyword in SOLITARY_KEYWORDS):
+        return SocialBehavior.SOLITARY
+    if any(keyword in text for keyword in HERD_KEYWORDS):
+        return SocialBehavior.HERD
+    # Bei allen bisherigen Einträgen greift eine der beiden Regeln oben. Für künftig
+    # ergänzte Tiere, die durch beide Raster fallen, lieber konservativ SOLITARY annehmen
+    # und sichtbar warnen, statt eine unbegründete Herdentier-Annahme zu treffen.
+    print(f"WARNUNG: Gesellschaftsleben von '{name_de}' nicht eindeutig zuordenbar "
+          f"('{gesellschaftsleben}') — falle zurück auf SOLITARY.")
+    return SocialBehavior.SOLITARY
+
+
+def _image_url(category: AnimalCategory) -> str:
+    return f"/images/placeholder-{category.value}.svg"
+
+
+def _load_animals() -> list[dict]:
+    with DATA_FILE.open(encoding="utf-8") as f:
+        raw = json.load(f)
+
+    animals = []
+    for entry in raw:
+        category = _map_category(entry["kategorie"])
+        animals.append(dict(
+            name_de=entry["name_de"],
+            name_scientific=entry["name_wiss"],
+            image_url=_image_url(category),
+            category=category,
+            home_turf=entry["zuhause"],
+            conservation_status=entry["status"],
+            reproduction_mode=_map_reproduction(entry["name_de"], entry["fortpflanzung"]),
+            offspring_brood=entry["kinderschar"],
+            baby_wait_time=entry["wartezeit_aufs_baby"],
+            favorite_food=entry["lieblingsspeise"],
+            arch_enemies=entry["erzfeinde"],
+            social_life=_map_social_behavior(entry["name_de"], entry["gesellschaftsleben"]),
+            group_size=None,
+            personality=entry["persoenlichkeit"],
+            fun_fact=entry.get("funfakt"),
+            superpower=entry.get("superkraft"),
+            mating_season=entry.get("balzzeit"),
+            nest_building=entry.get("nestbau"),
+            courtship_dance=entry.get("tanz_der_liebe"),
+            relationship_status=(
+                RelationshipStatus(entry["beziehungsstatus"]) if entry.get("beziehungsstatus") else None
+            ),
+        ))
+    return animals
+
+
+ANIMALS: list[dict] = _load_animals()
 
 
 def seed() -> None:
@@ -184,7 +134,7 @@ def seed() -> None:
         for data in ANIMALS:
             db.add(Animal(**data))
         db.commit()
-        print(f"{len(ANIMALS)} Beispieltiere eingefügt.")
+        print(f"{len(ANIMALS)} Tiere eingefügt.")
     finally:
         db.close()
 

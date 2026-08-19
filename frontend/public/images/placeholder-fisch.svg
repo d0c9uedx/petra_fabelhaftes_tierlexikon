@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Platzhalterbild: Fisch">
+  <rect width="400" height="300" fill="#48cae4"/>
+  <ellipse cx="190" cy="140" rx="75" ry="42" fill="#0077b6"/>
+  <path d="M265 140 l40 -30 l0 60 Z" fill="#0077b6"/>
+  <circle cx="150" cy="130" r="6" fill="#e0fbfc"/>
+  <path d="M120 140 q30 -20 60 0 q-30 20 -60 0 Z" fill="#48cae4" opacity="0.6"/>
+  <text x="200" y="235" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#03045e">Fisch</text>
+  <text x="200" y="262" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#023e5c">Kein Foto vorhanden</text>
+</svg>

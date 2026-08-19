@@ -1,6 +1,11 @@
 from pydantic import BaseModel, ConfigDict
 
-from app.models.animal import AnimalCategory, ReproductionMode, SocialBehavior
+from app.models.animal import (
+    AnimalCategory,
+    RelationshipStatus,
+    ReproductionMode,
+    SocialBehavior,
+)
 
 
 class AnimalOut(BaseModel):
@@ -11,16 +16,22 @@ class AnimalOut(BaseModel):
     name_scientific: str
     image_url: str
     category: AnimalCategory
-    habitat: str
+    home_turf: str
     conservation_status: str
     reproduction_mode: ReproductionMode
-    offspring_count: str
-    gestation_period: str
-    diet: str
-    natural_enemies: str
-    social_behavior: SocialBehavior
+    offspring_brood: str
+    baby_wait_time: str
+    favorite_food: str
+    arch_enemies: str
+    social_life: SocialBehavior
     group_size: str | None
-    character_traits: str
+    personality: str
+    fun_fact: str | None
+    superpower: str | None
+    mating_season: str | None
+    nest_building: str | None
+    courtship_dance: str | None
+    relationship_status: RelationshipStatus | None
 
 
 class AnimalListItem(BaseModel):
