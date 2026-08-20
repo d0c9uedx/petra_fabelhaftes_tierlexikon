@@ -1,0 +1,1202 @@
+{
+  "Hausrotschwanz": {
+    "image_path": "images/hausrotschwanz.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hausrotschwanz"
+  },
+  "Amsel": {
+    "image_path": "images/amsel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Amsel"
+  },
+  "Kohlmeise": {
+    "image_path": "images/kohlmeise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kohlmeise"
+  },
+  "Blaumeise": {
+    "image_path": "images/blaumeise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blaumeise"
+  },
+  "Rotkehlchen": {
+    "image_path": "images/rotkehlchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rotkehlchen"
+  },
+  "Star": {
+    "image_path": "images/star.jpg",
+    "source": "https://en.wikipedia.org/wiki/Star"
+  },
+  "Haussperling": {
+    "image_path": "images/haussperling.jpg",
+    "source": "https://de.wikipedia.org/wiki/Haussperling"
+  },
+  "Elster": {
+    "image_path": "images/elster.jpg",
+    "source": "https://de.wikipedia.org/wiki/Elster"
+  },
+  "Rabenkrähe": {
+    "image_path": "images/rabenkrähe.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rabenkr%C3%A4he"
+  },
+  "Buchfink": {
+    "image_path": "images/buchfink.jpg",
+    "source": "https://de.wikipedia.org/wiki/Buchfink"
+  },
+  "Mauersegler": {
+    "image_path": "images/mauersegler.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mauersegler"
+  },
+  "Rauchschwalbe": {
+    "image_path": "images/rauchschwalbe.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rauchschwalbe"
+  },
+  "Mehlschwalbe": {
+    "image_path": "images/mehlschwalbe.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mehlschwalbe"
+  },
+  "Kuckuck": {
+    "image_path": "images/kuckuck.jpg",
+    "source": "https://en.wikipedia.org/wiki/Kuckuck_Schallplatten"
+  },
+  "Waldkauz": {
+    "image_path": "images/waldkauz.jpg",
+    "source": "https://de.wikipedia.org/wiki/Waldkauz"
+  },
+  "Steinadler": {
+    "image_path": "images/steinadler.jpg",
+    "source": "https://de.wikipedia.org/wiki/Steinadler"
+  },
+  "Weißkopfseeadler": {
+    "image_path": "images/weißkopfseeadler.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wei%C3%9Fkopfseeadler"
+  },
+  "Turmfalke": {
+    "image_path": "images/turmfalke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Turmfalke"
+  },
+  "Mäusebussard": {
+    "image_path": "images/mäusebussard.jpg",
+    "source": "https://de.wikipedia.org/wiki/M%C3%A4usebussard"
+  },
+  "Graureiher": {
+    "image_path": "images/graureiher.jpg",
+    "source": "https://de.wikipedia.org/wiki/Graureiher"
+  },
+  "Weißstorch": {
+    "image_path": "images/weißstorch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wei%C3%9Fstorch"
+  },
+  "Höckerschwan": {
+    "image_path": "images/höckerschwan.jpg",
+    "source": "https://de.wikipedia.org/wiki/H%C3%B6ckerschwan"
+  },
+  "Stockente": {
+    "image_path": "images/stockente.jpg",
+    "source": "https://de.wikipedia.org/wiki/Stockente"
+  },
+  "Graugans": {
+    "image_path": "images/graugans.jpg",
+    "source": "https://de.wikipedia.org/wiki/Graugans"
+  },
+  "Pfau": {
+    "image_path": "images/pfau.jpg",
+    "source": "https://en.wikipedia.org/wiki/Indian_peafowl"
+  },
+  "Flamingo": {
+    "image_path": "images/flamingo.jpg",
+    "source": "https://en.wikipedia.org/wiki/Flamingo"
+  },
+  "Kaiserpinguin": {
+    "image_path": "images/kaiserpinguin.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kaiserpinguin"
+  },
+  "Strauß": {
+    "image_path": "images/strauß.jpg",
+    "source": "https://en.wikipedia.org/wiki/Strauss"
+  },
+  "Kolibri": {
+    "image_path": "images/kolibri.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kolibris"
+  },
+  "Ara (Papagei)": {
+    "image_path": "nicht gefunden",
+    "source": ""
+  },
+  "Pirol": {
+    "image_path": "images/pirol.jpg",
+    "source": "https://de.wikipedia.org/wiki/Pirol"
+  },
+  "Zaunkönig": {
+    "image_path": "images/zaunkönig.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zaunk%C3%B6nig"
+  },
+  "Bluthänfling": {
+    "image_path": "images/bluthänfling.jpg",
+    "source": "https://de.wikipedia.org/wiki/Bluth%C3%A4nfling"
+  },
+  "Grünfink": {
+    "image_path": "images/grünfink.jpg",
+    "source": "https://de.wikipedia.org/wiki/Gr%C3%BCnfink"
+  },
+  "Stieglitz": {
+    "image_path": "images/stieglitz.jpg",
+    "source": "https://de.wikipedia.org/wiki/Stieglitz"
+  },
+  "Gimpel": {
+    "image_path": "images/gimpel.jpg",
+    "source": "https://en.wikipedia.org/wiki/Eurasian_bullfinch"
+  },
+  "Wacholderdrossel": {
+    "image_path": "images/wacholderdrossel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wacholderdrossel"
+  },
+  "Singdrossel": {
+    "image_path": "images/singdrossel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Singdrossel"
+  },
+  "Wiedehopf": {
+    "image_path": "images/wiedehopf.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wiedehopf"
+  },
+  "Eisvogel": {
+    "image_path": "images/eisvogel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Eisvogel"
+  },
+  "Buntspecht": {
+    "image_path": "images/buntspecht.jpg",
+    "source": "https://de.wikipedia.org/wiki/Buntspecht"
+  },
+  "Schwarzspecht": {
+    "image_path": "images/schwarzspecht.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schwarzspecht"
+  },
+  "Uhu": {
+    "image_path": "images/uhu.jpg",
+    "source": "https://de.wikipedia.org/wiki/Uhu"
+  },
+  "Schleiereule": {
+    "image_path": "images/schleiereule.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schleiereule"
+  },
+  "Waldohreule": {
+    "image_path": "images/waldohreule.jpg",
+    "source": "https://de.wikipedia.org/wiki/Waldohreule"
+  },
+  "Fasan": {
+    "image_path": "images/fasan.jpg",
+    "source": "https://de.wikipedia.org/wiki/Fasan"
+  },
+  "Rebhuhn": {
+    "image_path": "images/rebhuhn.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rebhuhn"
+  },
+  "Wachtel": {
+    "image_path": "images/wachtel.jpg",
+    "source": "https://en.wikipedia.org/wiki/Common_quail"
+  },
+  "Kranich": {
+    "image_path": "images/kranich.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kranich"
+  },
+  "Löffler": {
+    "image_path": "images/löffler.jpg",
+    "source": "https://en.wikipedia.org/wiki/L%C3%B6ffler"
+  },
+  "Austernfischer": {
+    "image_path": "images/austernfischer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Austernfischer"
+  },
+  "Silbermöwe": {
+    "image_path": "images/silbermöwe.jpg",
+    "source": "https://de.wikipedia.org/wiki/Silberm%C3%B6we"
+  },
+  "Basstölpel": {
+    "image_path": "images/basstölpel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Basst%C3%B6lpel"
+  },
+  "Papageitaucher": {
+    "image_path": "images/papageitaucher.jpg",
+    "source": "https://de.wikipedia.org/wiki/Papageitaucher"
+  },
+  "Albatros": {
+    "image_path": "images/albatros.jpg",
+    "source": "https://en.wikipedia.org/wiki/Snowy_albatross"
+  },
+  "Andenkondor": {
+    "image_path": "images/andenkondor.jpg",
+    "source": "https://de.wikipedia.org/wiki/Andenkondor"
+  },
+  "Emu": {
+    "image_path": "images/emu.jpg",
+    "source": "https://en.wikipedia.org/wiki/Emu"
+  },
+  "Kiwi": {
+    "image_path": "images/kiwi.jpg",
+    "source": "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+  },
+  "Sekretär": {
+    "image_path": "images/sekretär.jpg",
+    "source": "https://de.wikipedia.org/wiki/Sekret%C3%A4r"
+  },
+  "Marabu": {
+    "image_path": "images/marabu.jpg",
+    "source": "https://en.wikipedia.org/wiki/Dichrostachys_cinerea"
+  },
+  "Karpfen": {
+    "image_path": "images/karpfen.jpg",
+    "source": "https://en.wikipedia.org/wiki/Krupina"
+  },
+  "Forelle": {
+    "image_path": "images/forelle.jpg",
+    "source": "https://de.wikipedia.org/wiki/Forelle"
+  },
+  "Hecht": {
+    "image_path": "images/hecht.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hecht"
+  },
+  "Zander": {
+    "image_path": "images/zander.jpg",
+    "source": "https://en.wikipedia.org/wiki/Zander"
+  },
+  "Barsch": {
+    "image_path": "images/barsch.jpg",
+    "source": "https://en.wikipedia.org/wiki/Wulf_Barsch"
+  },
+  "Wels": {
+    "image_path": "images/wels.jpg",
+    "source": "https://en.wikipedia.org/wiki/Wels"
+  },
+  "Aal": {
+    "image_path": "images/aal.jpg",
+    "source": "https://de.wikipedia.org/wiki/Aale"
+  },
+  "Hering": {
+    "image_path": "images/hering.jpg",
+    "source": "https://de.wikipedia.org/wiki/Heringe"
+  },
+  "Kabeljau": {
+    "image_path": "images/kabeljau.jpg",
+    "source": "https://de.wikipedia.org/wiki/Atlantischer_Kabeljau"
+  },
+  "Thunfisch": {
+    "image_path": "images/thunfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Thunfische"
+  },
+  "Lachs": {
+    "image_path": "images/lachs.jpg",
+    "source": "https://en.wikipedia.org/wiki/Atlantic_salmon"
+  },
+  "Seezunge": {
+    "image_path": "images/seezunge.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seezunge"
+  },
+  "Makrele": {
+    "image_path": "images/makrele.jpg",
+    "source": "https://de.wikipedia.org/wiki/Makrele"
+  },
+  "Sardine": {
+    "image_path": "images/sardine.jpg",
+    "source": "https://en.wikipedia.org/wiki/Sardine"
+  },
+  "Goldfisch": {
+    "image_path": "images/goldfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Goldfisch"
+  },
+  "Guppy": {
+    "image_path": "images/guppy.jpg",
+    "source": "https://en.wikipedia.org/wiki/Guppy"
+  },
+  "Zebrabärbling": {
+    "image_path": "images/zebrabärbling.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zebrab%C3%A4rbling"
+  },
+  "Diskusfisch": {
+    "image_path": "images/diskusfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Diskusfische"
+  },
+  "Clownfisch": {
+    "image_path": "images/clownfisch.jpg",
+    "source": "https://en.wikipedia.org/wiki/Nemo_(singer)"
+  },
+  "Kaiserangelfisch": {
+    "image_path": "images/kaiserangelfisch.jpg",
+    "source": "https://en.wikipedia.org/wiki/Emperor_angelfish"
+  },
+  "Rochen": {
+    "image_path": "images/rochen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rochen"
+  },
+  "Hammerhai": {
+    "image_path": "images/hammerhai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hammerhaie"
+  },
+  "Weißer Hai": {
+    "image_path": "images/weißer_hai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wei%C3%9Fer_Hai"
+  },
+  "Seepferdchen": {
+    "image_path": "images/seepferdchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seepferdchen"
+  },
+  "Kugelfisch": {
+    "image_path": "images/kugelfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kugelfische"
+  },
+  "Piranha": {
+    "image_path": "images/piranha.jpg",
+    "source": "https://en.wikipedia.org/wiki/Piranha"
+  },
+  "Koi": {
+    "image_path": "images/koi.jpg",
+    "source": "https://en.wikipedia.org/wiki/Koi"
+  },
+  "Marlin": {
+    "image_path": "images/marlin.jpg",
+    "source": "https://en.wikipedia.org/wiki/Marlin"
+  },
+  "Schwertfisch": {
+    "image_path": "images/schwertfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schwertfisch"
+  },
+  "Anglerfisch": {
+    "image_path": "images/anglerfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Anglerfische"
+  },
+  "Stör": {
+    "image_path": "images/stör.jpg",
+    "source": "https://en.wikipedia.org/wiki/St%C3%B6r"
+  },
+  "Elritze": {
+    "image_path": "images/elritze.jpg",
+    "source": "https://de.wikipedia.org/wiki/Elritze"
+  },
+  "Döbel": {
+    "image_path": "images/döbel.jpg",
+    "source": "https://de.wikipedia.org/wiki/D%C3%B6bel"
+  },
+  "Rotauge": {
+    "image_path": "images/rotauge.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rotauge"
+  },
+  "Schleie": {
+    "image_path": "images/schleie.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schleie"
+  },
+  "Wolfsbarsch": {
+    "image_path": "images/wolfsbarsch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wolfsbarsche"
+  },
+  "Goldbrasse": {
+    "image_path": "images/goldbrasse.jpg",
+    "source": "https://de.wikipedia.org/wiki/Goldbrasse"
+  },
+  "Seelachs": {
+    "image_path": "images/seelachs.jpg",
+    "source": "https://de.wikipedia.org/wiki/K%C3%B6hler_(Fisch)"
+  },
+  "Scholle": {
+    "image_path": "images/scholle.jpg",
+    "source": "https://en.wikipedia.org/wiki/Vlotbrug"
+  },
+  "Steinbutt": {
+    "image_path": "images/steinbutt.jpg",
+    "source": "https://de.wikipedia.org/wiki/Steinbutt"
+  },
+  "Muräne": {
+    "image_path": "images/muräne.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mur%C3%A4nen"
+  },
+  "Zackenbarsch": {
+    "image_path": "images/zackenbarsch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zackenbarsche"
+  },
+  "Papageifisch": {
+    "image_path": "images/papageifisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Papageifische"
+  },
+  "Segelflosser": {
+    "image_path": "images/segelflosser.jpg",
+    "source": "https://de.wikipedia.org/wiki/Skalare"
+  },
+  "Neonsalmler": {
+    "image_path": "images/neonsalmler.jpg",
+    "source": "https://de.wikipedia.org/wiki/Neonsalmler"
+  },
+  "Mondfisch": {
+    "image_path": "images/mondfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mondfisch"
+  },
+  "Zitteraal": {
+    "image_path": "images/zitteraal.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zitteraale"
+  },
+  "Fliegender Fisch": {
+    "image_path": "images/fliegender_fisch.jpg",
+    "source": "https://en.wikipedia.org/wiki/Flying_fish"
+  },
+  "Blauhai": {
+    "image_path": "images/blauhai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blauhai"
+  },
+  "Ammenhai": {
+    "image_path": "images/ammenhai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Ammenhaie"
+  },
+  "Sandtigerhai": {
+    "image_path": "images/sandtigerhai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Sandtigerhai"
+  },
+  "Mantarochen": {
+    "image_path": "images/mantarochen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mantarochen"
+  },
+  "Barrakuda": {
+    "image_path": "images/barrakuda.jpg",
+    "source": "https://en.wikipedia.org/wiki/Great_barracuda"
+  },
+  "Tigerhai": {
+    "image_path": "images/tigerhai.jpg",
+    "source": "https://de.wikipedia.org/wiki/Tigerhai"
+  },
+  "Palettendoktorfisch": {
+    "image_path": "images/palettendoktorfisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Paletten-Doktorfisch"
+  },
+  "Sägerochen": {
+    "image_path": "images/sägerochen.jpg",
+    "source": "https://de.wikipedia.org/wiki/S%C3%A4gerochen"
+  },
+  "Buntbarsch": {
+    "image_path": "images/buntbarsch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Buntbarsche"
+  },
+  "Antennenwels": {
+    "image_path": "images/antennenwels.jpg",
+    "source": "https://en.wikipedia.org/wiki/Ancistrus"
+  },
+  "Kampffisch": {
+    "image_path": "images/kampffisch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kampffische"
+  },
+  "Karausche": {
+    "image_path": "images/karausche.jpg",
+    "source": "https://de.wikipedia.org/wiki/Karausche"
+  },
+  "Siebenpunkt-Marienkäfer": {
+    "image_path": "images/siebenpunkt-marienkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Siebenpunkt-Marienk%C3%A4fer"
+  },
+  "Maikäfer": {
+    "image_path": "images/maikäfer.jpg",
+    "source": "https://en.wikipedia.org/wiki/Maik%C3%A4fer"
+  },
+  "Hirschkäfer": {
+    "image_path": "images/hirschkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hirschk%C3%A4fer"
+  },
+  "Rosenkäfer": {
+    "image_path": "images/rosenkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rosenk%C3%A4fer"
+  },
+  "Laufkäfer": {
+    "image_path": "images/laufkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Laufk%C3%A4fer"
+  },
+  "Borkenkäfer": {
+    "image_path": "images/borkenkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Borkenk%C3%A4fer"
+  },
+  "Kartoffelkäfer": {
+    "image_path": "images/kartoffelkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kartoffelk%C3%A4fer"
+  },
+  "Glühwürmchen": {
+    "image_path": "images/glühwürmchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Leuchtk%C3%A4fer"
+  },
+  "Mistkäfer": {
+    "image_path": "images/mistkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Mistk%C3%A4fer"
+  },
+  "Nashornkäfer": {
+    "image_path": "images/nashornkäfer.jpg",
+    "source": "https://en.wikipedia.org/wiki/European_rhinoceros_beetle"
+  },
+  "Honigbiene": {
+    "image_path": "images/honigbiene.jpg",
+    "source": "https://de.wikipedia.org/wiki/Westliche_Honigbiene"
+  },
+  "Hummel": {
+    "image_path": "images/hummel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hummeln"
+  },
+  "Wespe": {
+    "image_path": "images/wespe.jpg",
+    "source": "https://en.wikipedia.org/wiki/Wespe"
+  },
+  "Hornisse": {
+    "image_path": "images/hornisse.jpg",
+    "source": "https://en.wikipedia.org/wiki/Nashorn"
+  },
+  "Ameise": {
+    "image_path": "images/ameise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Ameisen"
+  },
+  "Termite": {
+    "image_path": "images/termite.jpg",
+    "source": "https://en.wikipedia.org/wiki/Termite"
+  },
+  "Florfliege": {
+    "image_path": "images/florfliege.jpg",
+    "source": "https://de.wikipedia.org/wiki/Florfliegen"
+  },
+  "Libelle": {
+    "image_path": "images/libelle.jpg",
+    "source": "https://de.wikipedia.org/wiki/Libellen"
+  },
+  "Heuschrecke": {
+    "image_path": "images/heuschrecke.jpg",
+    "source": "https://en.wikipedia.org/wiki/Heuschrecke_10"
+  },
+  "Grille": {
+    "image_path": "images/grille.jpg",
+    "source": "https://en.wikipedia.org/wiki/Fantasiest%C3%BCcke%2C_Op._12"
+  },
+  "Gottesanbeterin": {
+    "image_path": "images/gottesanbeterin.jpg",
+    "source": "https://en.wikipedia.org/wiki/European_mantis"
+  },
+  "Stabheuschrecke": {
+    "image_path": "images/stabheuschrecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Gespenstschrecken"
+  },
+  "Stubenfliege": {
+    "image_path": "images/stubenfliege.jpg",
+    "source": "https://de.wikipedia.org/wiki/Stubenfliege"
+  },
+  "Stechmücke": {
+    "image_path": "images/stechmücke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Stechm%C3%BCcken"
+  },
+  "Admiral (Schmetterling)": {
+    "image_path": "images/admiral_schmetterling.jpg",
+    "source": "https://de.wikipedia.org/wiki/Admiral_(Schmetterling)"
+  },
+  "Schwalbenschwanz": {
+    "image_path": "images/schwalbenschwanz.jpg",
+    "source": "https://en.wikipedia.org/wiki/Papilio_machaon"
+  },
+  "Kohlweißling": {
+    "image_path": "images/kohlweißling.jpg",
+    "source": "https://en.wikipedia.org/wiki/Pieris_brassicae"
+  },
+  "Monarchfalter": {
+    "image_path": "images/monarchfalter.jpg",
+    "source": "https://de.wikipedia.org/wiki/Monarchfalter"
+  },
+  "Seidenspinner": {
+    "image_path": "images/seidenspinner.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seidenspinner"
+  },
+  "Wanderheuschrecke": {
+    "image_path": "images/wanderheuschrecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wanderheuschrecken"
+  },
+  "Ohrwurm": {
+    "image_path": "images/ohrwurm.jpg",
+    "source": "https://en.wikipedia.org/wiki/Forficula_auricularia"
+  },
+  "Feuerwanze": {
+    "image_path": "images/feuerwanze.jpg",
+    "source": "https://de.wikipedia.org/wiki/Feuerwanzen"
+  },
+  "Skorpionsfliege": {
+    "image_path": "images/skorpionsfliege.jpg",
+    "source": "https://de.wikipedia.org/wiki/Skorpionsfliegen"
+  },
+  "Eintagsfliege": {
+    "image_path": "images/eintagsfliege.jpg",
+    "source": "https://de.wikipedia.org/wiki/Eintagsfliegen"
+  },
+  "Köcherfliege": {
+    "image_path": "images/köcherfliege.jpg",
+    "source": "https://de.wikipedia.org/wiki/K%C3%B6cherfliegen"
+  },
+  "Kakerlake": {
+    "image_path": "images/kakerlake.jpg",
+    "source": "https://de.wikipedia.org/wiki/K%C3%BCchenschabe"
+  },
+  "Blattlaus": {
+    "image_path": "images/blattlaus.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blattl%C3%A4use"
+  },
+  "Zikade": {
+    "image_path": "images/zikade.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zikaden"
+  },
+  "Treiberameise": {
+    "image_path": "images/treiberameise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wanderameisen"
+  },
+  "Feuerameise": {
+    "image_path": "images/feuerameise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Feuerameisen"
+  },
+  "Zitronenfalter": {
+    "image_path": "images/zitronenfalter.jpg",
+    "source": "https://de.wikipedia.org/wiki/Zitronenfalter"
+  },
+  "Tagpfauenauge": {
+    "image_path": "images/tagpfauenauge.jpg",
+    "source": "https://de.wikipedia.org/wiki/Tagpfauenauge"
+  },
+  "Kleiner Fuchs": {
+    "image_path": "images/kleiner_fuchs.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kleiner_Fuchs"
+  },
+  "Distelfalter": {
+    "image_path": "images/distelfalter.jpg",
+    "source": "https://de.wikipedia.org/wiki/Distelfalter"
+  },
+  "Wiener Nachtpfauenauge": {
+    "image_path": "images/wiener_nachtpfauenauge.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wiener_Nachtpfauenauge"
+  },
+  "Totenkopfschwärmer": {
+    "image_path": "images/totenkopfschwärmer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Totenkopfschw%C3%A4rmer"
+  },
+  "Taubenschwänzchen": {
+    "image_path": "images/taubenschwänzchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Taubenschw%C3%A4nzchen"
+  },
+  "Sandlaufkäfer": {
+    "image_path": "images/sandlaufkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Sandlaufk%C3%A4fer"
+  },
+  "Ölkäfer": {
+    "image_path": "images/ölkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/%C3%96lk%C3%A4fer"
+  },
+  "Bombardierkäfer": {
+    "image_path": "images/bombardierkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Bombardierk%C3%A4fer"
+  },
+  "Junikäfer": {
+    "image_path": "images/junikäfer.jpg",
+    "source": "https://en.wikipedia.org/wiki/Amphimallon_solstitiale"
+  },
+  "Weberameise": {
+    "image_path": "images/weberameise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Weberameisen"
+  },
+  "Rossameise": {
+    "image_path": "images/rossameise.jpg",
+    "source": "https://de.wikipedia.org/wiki/Rossameisen"
+  },
+  "Wasserläufer": {
+    "image_path": "images/wasserläufer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wasserl%C3%A4ufer"
+  },
+  "Rückenschwimmer": {
+    "image_path": "images/rückenschwimmer.jpg",
+    "source": "https://de.wikipedia.org/wiki/R%C3%BCckenschwimmer"
+  },
+  "Gelbrandkäfer": {
+    "image_path": "images/gelbrandkäfer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Gelbrandk%C3%A4fer"
+  },
+  "Prachtlibelle": {
+    "image_path": "images/prachtlibelle.jpg",
+    "source": "https://de.wikipedia.org/wiki/Prachtlibellen"
+  },
+  "Blauflügelige Ödlandschrecke": {
+    "image_path": "images/blauflügelige_ödlandschrecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blaufl%C3%BCgelige_%C3%96dlandschrecke"
+  },
+  "Feldgrille": {
+    "image_path": "images/feldgrille.jpg",
+    "source": "https://de.wikipedia.org/wiki/Feldgrille"
+  },
+  "Pillendreher": {
+    "image_path": "images/pillendreher.jpg",
+    "source": "https://en.wikipedia.org/wiki/Scarabaeus_sacer"
+  },
+  "Löwe": {
+    "image_path": "images/löwe.jpg",
+    "source": "https://de.wikipedia.org/wiki/L%C3%B6we"
+  },
+  "Tiger": {
+    "image_path": "images/tiger.jpg",
+    "source": "https://en.wikipedia.org/wiki/Tiger"
+  },
+  "Elefant": {
+    "image_path": "images/elefant.jpg",
+    "source": "https://en.wikipedia.org/wiki/Elefant"
+  },
+  "Giraffe": {
+    "image_path": "images/giraffe.jpg",
+    "source": "https://en.wikipedia.org/wiki/Giraffe"
+  },
+  "Zebra": {
+    "image_path": "images/zebra.jpg",
+    "source": "https://en.wikipedia.org/wiki/Zebra"
+  },
+  "Nashorn": {
+    "image_path": "images/nashorn.jpg",
+    "source": "https://en.wikipedia.org/wiki/Nashorn"
+  },
+  "Nilpferd": {
+    "image_path": "images/nilpferd.jpg",
+    "source": "https://de.wikipedia.org/wiki/Flusspferd"
+  },
+  "Gorilla": {
+    "image_path": "images/gorilla.jpg",
+    "source": "https://en.wikipedia.org/wiki/Gorilla"
+  },
+  "Schimpanse": {
+    "image_path": "images/schimpanse.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schimpansen"
+  },
+  "Braunbär": {
+    "image_path": "images/braunbär.jpg",
+    "source": "https://de.wikipedia.org/wiki/Braunb%C3%A4r"
+  },
+  "Eisbär": {
+    "image_path": "images/eisbär.jpg",
+    "source": "https://en.wikipedia.org/wiki/Eisb%C3%A4r"
+  },
+  "Wolf": {
+    "image_path": "images/wolf.jpg",
+    "source": "https://en.wikipedia.org/wiki/Wolf"
+  },
+  "Fuchs": {
+    "image_path": "images/fuchs.jpg",
+    "source": "https://en.wikipedia.org/wiki/Red_fox"
+  },
+  "Reh": {
+    "image_path": "images/reh.jpg",
+    "source": "https://de.wikipedia.org/wiki/Reh"
+  },
+  "Hirsch": {
+    "image_path": "images/hirsch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hirsche"
+  },
+  "Wildschwein": {
+    "image_path": "images/wildschwein.jpg",
+    "source": "https://de.wikipedia.org/wiki/Wildschwein"
+  },
+  "Igel": {
+    "image_path": "images/igel.jpg",
+    "source": "https://en.wikipedia.org/wiki/Igel"
+  },
+  "Eichhörnchen": {
+    "image_path": "images/eichhörnchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Eichh%C3%B6rnchen"
+  },
+  "Maulwurf": {
+    "image_path": "images/maulwurf.jpg",
+    "source": "https://en.wikipedia.org/wiki/European_mole"
+  },
+  "Fledermaus": {
+    "image_path": "images/fledermaus.jpg",
+    "source": "https://en.wikipedia.org/wiki/Die_Fledermaus"
+  },
+  "Delfin": {
+    "image_path": "images/delfin.jpg",
+    "source": "https://de.wikipedia.org/wiki/Delfine"
+  },
+  "Blauwal": {
+    "image_path": "images/blauwal.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blauwal"
+  },
+  "Orca": {
+    "image_path": "images/orca.jpg",
+    "source": "https://en.wikipedia.org/wiki/Orca"
+  },
+  "Kapibara": {
+    "image_path": "images/kapibara.jpg",
+    "source": "https://en.wikipedia.org/wiki/Capybara"
+  },
+  "Koala": {
+    "image_path": "images/koala.jpg",
+    "source": "https://en.wikipedia.org/wiki/Koala"
+  },
+  "Känguru": {
+    "image_path": "images/känguru.jpg",
+    "source": "https://de.wikipedia.org/wiki/K%C3%A4ngurus"
+  },
+  "Panda": {
+    "image_path": "images/panda.jpg",
+    "source": "https://en.wikipedia.org/wiki/Giant_panda"
+  },
+  "Waschbär": {
+    "image_path": "images/waschbär.jpg",
+    "source": "https://de.wikipedia.org/wiki/Waschb%C3%A4r"
+  },
+  "Otter": {
+    "image_path": "images/otter.jpg",
+    "source": "https://en.wikipedia.org/wiki/Otter"
+  },
+  "Luchs": {
+    "image_path": "images/luchs.jpg",
+    "source": "https://en.wikipedia.org/wiki/Eurasian_lynx"
+  },
+  "Leopard": {
+    "image_path": "images/leopard.jpg",
+    "source": "https://en.wikipedia.org/wiki/Leopard"
+  },
+  "Gepard": {
+    "image_path": "images/gepard.jpg",
+    "source": "https://de.wikipedia.org/wiki/Gepard"
+  },
+  "Jaguar": {
+    "image_path": "images/jaguar.jpg",
+    "source": "https://en.wikipedia.org/wiki/Jaguar"
+  },
+  "Puma": {
+    "image_path": "images/puma.jpg",
+    "source": "https://de.wikipedia.org/wiki/Puma"
+  },
+  "Hyäne": {
+    "image_path": "images/hyäne.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hy%C3%A4nen"
+  },
+  "Erdmännchen": {
+    "image_path": "images/erdmännchen.jpg",
+    "source": "https://de.wikipedia.org/wiki/Erdm%C3%A4nnchen"
+  },
+  "Wisent": {
+    "image_path": "images/wisent.jpg",
+    "source": "https://en.wikipedia.org/wiki/European_bison"
+  },
+  "Amerikanischer Bison": {
+    "image_path": "images/amerikanischer_bison.jpg",
+    "source": "https://de.wikipedia.org/wiki/Amerikanischer_Bison"
+  },
+  "Elch": {
+    "image_path": "images/elch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Elch"
+  },
+  "Rentier": {
+    "image_path": "images/rentier.jpg",
+    "source": "https://de.wikipedia.org/wiki/Ren"
+  },
+  "Alpaka": {
+    "image_path": "images/alpaka.jpg",
+    "source": "https://en.wikipedia.org/wiki/Alpaca"
+  },
+  "Lama": {
+    "image_path": "images/lama.jpg",
+    "source": "https://en.wikipedia.org/wiki/Lama"
+  },
+  "Dromedar": {
+    "image_path": "images/dromedar.jpg",
+    "source": "https://de.wikipedia.org/wiki/Dromedar"
+  },
+  "Trampeltier": {
+    "image_path": "images/trampeltier.jpg",
+    "source": "https://de.wikipedia.org/wiki/Trampeltier"
+  },
+  "Okapi": {
+    "image_path": "images/okapi.jpg",
+    "source": "https://en.wikipedia.org/wiki/Okapi"
+  },
+  "Gnu": {
+    "image_path": "images/gnu.jpg",
+    "source": "https://en.wikipedia.org/wiki/Wildebeest"
+  },
+  "Impala": {
+    "image_path": "images/impala.jpg",
+    "source": "https://en.wikipedia.org/wiki/Impala"
+  },
+  "Springbock": {
+    "image_path": "images/springbock.jpg",
+    "source": "https://de.wikipedia.org/wiki/Springb%C3%B6cke"
+  },
+  "Warzenschwein": {
+    "image_path": "images/warzenschwein.jpg",
+    "source": "https://de.wikipedia.org/wiki/Warzenschwein"
+  },
+  "Faultier": {
+    "image_path": "images/faultier.jpg",
+    "source": "https://de.wikipedia.org/wiki/Faultiere"
+  },
+  "Ameisenbär": {
+    "image_path": "images/ameisenbär.jpg",
+    "source": "https://de.wikipedia.org/wiki/Ameisenb%C3%A4ren"
+  },
+  "Gürteltier": {
+    "image_path": "images/gürteltier.jpg",
+    "source": "https://de.wikipedia.org/wiki/G%C3%BCrteltiere"
+  },
+  "Stachelschwein": {
+    "image_path": "images/stachelschwein.jpg",
+    "source": "https://de.wikipedia.org/wiki/Stachelschweine"
+  },
+  "Biber": {
+    "image_path": "images/biber.jpg",
+    "source": "https://de.wikipedia.org/wiki/Biber"
+  },
+  "Dachs": {
+    "image_path": "images/dachs.jpg",
+    "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Dachs"
+  },
+  "Steinmarder": {
+    "image_path": "images/steinmarder.jpg",
+    "source": "https://de.wikipedia.org/wiki/Steinmarder"
+  },
+  "Hermelin": {
+    "image_path": "images/hermelin.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hermelin"
+  },
+  "Seehund": {
+    "image_path": "images/seehund.jpg",
+    "source": "https://en.wikipedia.org/wiki/Seehund"
+  },
+  "Walross": {
+    "image_path": "images/walross.jpg",
+    "source": "https://de.wikipedia.org/wiki/Walross"
+  },
+  "Schnabeltier": {
+    "image_path": "images/schnabeltier.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schnabeltier"
+  },
+  "Chamäleon": {
+    "image_path": "images/chamäleon.jpg",
+    "source": "https://en.wikipedia.org/wiki/Chameleon"
+  },
+  "Leguan": {
+    "image_path": "images/leguan.jpg",
+    "source": "https://en.wikipedia.org/wiki/Leguan_Island"
+  },
+  "Bartagame": {
+    "image_path": "images/bartagame.jpg",
+    "source": "https://de.wikipedia.org/wiki/Bartagamen"
+  },
+  "Gecko": {
+    "image_path": "images/gecko.jpg",
+    "source": "https://en.wikipedia.org/wiki/Gecko"
+  },
+  "Krokodil": {
+    "image_path": "images/krokodil.jpg",
+    "source": "https://en.wikipedia.org/wiki/Krokodil"
+  },
+  "Alligator": {
+    "image_path": "images/alligator.jpg",
+    "source": "https://en.wikipedia.org/wiki/Alligator"
+  },
+  "Landschildkröte": {
+    "image_path": "images/landschildkröte.jpg",
+    "source": "https://de.wikipedia.org/wiki/Landschildkr%C3%B6ten"
+  },
+  "Boa Constrictor": {
+    "image_path": "images/boa_constrictor.jpg",
+    "source": "https://en.wikipedia.org/wiki/Boa_constrictor"
+  },
+  "Klapperschlange": {
+    "image_path": "images/klapperschlange.jpg",
+    "source": "https://de.wikipedia.org/wiki/Klapperschlangen"
+  },
+  "Kobra": {
+    "image_path": "images/kobra.jpg",
+    "source": "https://en.wikipedia.org/wiki/Indian_cobra"
+  },
+  "Ringelnatter": {
+    "image_path": "images/ringelnatter.jpg",
+    "source": "https://de.wikipedia.org/wiki/Ringelnatter"
+  },
+  "Blindschleiche": {
+    "image_path": "images/blindschleiche.jpg",
+    "source": "https://de.wikipedia.org/wiki/Blindschleiche"
+  },
+  "Komodowaran": {
+    "image_path": "images/komodowaran.jpg",
+    "source": "https://de.wikipedia.org/wiki/Komodowaran"
+  },
+  "Grasfrosch": {
+    "image_path": "images/grasfrosch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Grasfrosch"
+  },
+  "Kröte": {
+    "image_path": "images/kröte.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kr%C3%B6ten"
+  },
+  "Feuersalamander": {
+    "image_path": "images/feuersalamander.jpg",
+    "source": "https://de.wikipedia.org/wiki/Feuersalamander"
+  },
+  "Axolotl": {
+    "image_path": "images/axolotl.jpg",
+    "source": "https://en.wikipedia.org/wiki/Axolotl"
+  },
+  "Molch": {
+    "image_path": "images/molch.jpg",
+    "source": "https://en.wikipedia.org/wiki/Molch"
+  },
+  "Kreuzspinne": {
+    "image_path": "images/kreuzspinne.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kreuzspinnen"
+  },
+  "Vogelspinne": {
+    "image_path": "images/vogelspinne.jpg",
+    "source": "https://de.wikipedia.org/wiki/Vogelspinnen"
+  },
+  "Skorpion": {
+    "image_path": "images/skorpion.jpg",
+    "source": "https://de.wikipedia.org/wiki/Skorpione"
+  },
+  "Tausendfüßer": {
+    "image_path": "images/tausendfüßer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Tausendf%C3%BC%C3%9Fer"
+  },
+  "Regenwurm": {
+    "image_path": "images/regenwurm.jpg",
+    "source": "https://de.wikipedia.org/wiki/Regenw%C3%BCrmer"
+  },
+  "Weinbergschnecke": {
+    "image_path": "images/weinbergschnecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Weinbergschnecke"
+  },
+  "Nacktschnecke": {
+    "image_path": "images/nacktschnecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Nacktschnecke"
+  },
+  "Seestern": {
+    "image_path": "images/seestern.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seesterne"
+  },
+  "Qualle": {
+    "image_path": "images/qualle.jpg",
+    "source": "https://de.wikipedia.org/wiki/Qualle"
+  },
+  "Krake": {
+    "image_path": "images/krake.jpg",
+    "source": "https://en.wikipedia.org/wiki/Krake"
+  },
+  "Krabbe": {
+    "image_path": "images/krabbe.jpg",
+    "source": "https://de.wikipedia.org/wiki/Krabben"
+  },
+  "Languste": {
+    "image_path": "images/languste.jpg",
+    "source": "https://de.wikipedia.org/wiki/Langusten"
+  },
+  "Nilwaran": {
+    "image_path": "images/nilwaran.jpg",
+    "source": "https://de.wikipedia.org/wiki/Nilwaran"
+  },
+  "Anakonda": {
+    "image_path": "images/anakonda.jpg",
+    "source": "https://en.wikipedia.org/wiki/Anakonda"
+  },
+  "Netzpython": {
+    "image_path": "images/netzpython.jpg",
+    "source": "https://de.wikipedia.org/wiki/Netzpython"
+  },
+  "Königspython": {
+    "image_path": "images/königspython.jpg",
+    "source": "https://de.wikipedia.org/wiki/K%C3%B6nigspython"
+  },
+  "Schwarze Mamba": {
+    "image_path": "images/schwarze_mamba.jpg",
+    "source": "https://de.wikipedia.org/wiki/Schwarze_Mamba"
+  },
+  "Seeschlange": {
+    "image_path": "images/seeschlange.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seeschlangen"
+  },
+  "Europäische Sumpfschildkröte": {
+    "image_path": "images/europäische_sumpfschildkröte.jpg",
+    "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ische_Sumpfschildkr%C3%B6te"
+  },
+  "Lederschildkröte": {
+    "image_path": "images/lederschildkröte.jpg",
+    "source": "https://de.wikipedia.org/wiki/Lederschildkr%C3%B6te"
+  },
+  "Galapagos-Riesenschildkröte": {
+    "image_path": "images/galapagos-riesenschildkröte.jpg",
+    "source": "https://de.wikipedia.org/wiki/Galapagos-Riesenschildkr%C3%B6ten"
+  },
+  "Pfeilgiftfrosch": {
+    "image_path": "images/pfeilgiftfrosch.jpg",
+    "source": "https://de.wikipedia.org/wiki/Baumsteigerfr%C3%B6sche"
+  },
+  "Laubfrosch": {
+    "image_path": "images/laubfrosch.jpg",
+    "source": "https://en.wikipedia.org/wiki/European_tree_frog"
+  },
+  "Ochsenfrosch": {
+    "image_path": "images/ochsenfrosch.jpg",
+    "source": "https://en.wikipedia.org/wiki/American_bullfrog"
+  },
+  "Alpensalamander": {
+    "image_path": "images/alpensalamander.jpg",
+    "source": "https://de.wikipedia.org/wiki/Alpensalamander"
+  },
+  "Olm": {
+    "image_path": "images/olm.jpg",
+    "source": "https://en.wikipedia.org/wiki/Olm"
+  },
+  "Blauzungenskink": {
+    "image_path": "images/blauzungenskink.jpg",
+    "source": "https://de.wikipedia.org/wiki/Gemeiner_Blauzungenskink"
+  },
+  "Basilisk": {
+    "image_path": "images/basilisk.jpg",
+    "source": "https://en.wikipedia.org/wiki/Basilisk"
+  },
+  "Madagaskar-Taggecko": {
+    "image_path": "images/madagaskar-taggecko.jpg",
+    "source": "https://de.wikipedia.org/wiki/Madagaskar-Taggecko"
+  },
+  "Tokeh": {
+    "image_path": "images/tokeh.jpg",
+    "source": "https://de.wikipedia.org/wiki/Tokeh"
+  },
+  "Kammspinne": {
+    "image_path": "images/kammspinne.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kammspinnen"
+  },
+  "Kaiserskorpion": {
+    "image_path": "images/kaiserskorpion.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kaiserskorpion"
+  },
+  "Hundertfüßer": {
+    "image_path": "images/hundertfüßer.jpg",
+    "source": "https://de.wikipedia.org/wiki/Hundertf%C3%BC%C3%9Fer"
+  },
+  "Kellerassel": {
+    "image_path": "images/kellerassel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Kellerassel"
+  },
+  "Flusskrebs": {
+    "image_path": "images/flusskrebs.jpg",
+    "source": "https://en.wikipedia.org/wiki/Astacus_astacus"
+  },
+  "Einsiedlerkrebs": {
+    "image_path": "images/einsiedlerkrebs.jpg",
+    "source": "https://de.wikipedia.org/wiki/Einsiedlerkrebse"
+  },
+  "Seeigel": {
+    "image_path": "images/seeigel.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seeigel"
+  },
+  "Seegurke": {
+    "image_path": "images/seegurke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Seegurken"
+  },
+  "Kalmar": {
+    "image_path": "images/kalmar.jpg",
+    "source": "https://en.wikipedia.org/wiki/Kalmar"
+  },
+  "Pfeilschwanzkrebs": {
+    "image_path": "images/pfeilschwanzkrebs.jpg",
+    "source": "https://de.wikipedia.org/wiki/Pfeilschwanzkrebse"
+  },
+  "Apfelschnecke": {
+    "image_path": "images/apfelschnecke.jpg",
+    "source": "https://de.wikipedia.org/wiki/Apfelschnecken"
+  },
+  "Hummer": {
+    "image_path": "images/hummer.jpg",
+    "source": "https://en.wikipedia.org/wiki/Hummer"
+  }
+}

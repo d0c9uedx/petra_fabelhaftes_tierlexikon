@@ -58,9 +58,17 @@ App läuft dann unter http://localhost:5173 (Backend muss parallel laufen).
 5. Quiz mit vereinfachtem Spaced-Repetition-Algorithmus (SM-2-artig)
 6. Mehrbenutzer-Login (Benutzername/Passwort, JWT)
 
+## Tierbilder
+
+Für 299 der 300 Tiere liegen Wikipedia-Bilder als JPG vor:
+
+- **Speicherort:** `backend/app/seed/data/images/{name_de_klein}.jpg`
+- **Mapping:** `backend/app/seed/data/animal_images.json` — verbindet `name_de` mit Dateipfad und Wikipedia-Quelle
+- **Skript:** `backend/app/seed/data/download_wikipedia_images.py` — bei Bedarf ausführen, um Bilder neu herunterzuladen (ca. 5 Minuten wegen Rate-Limiting). Sucht in drei Stufen: Singular → Plural → wissenschaftlicher Name
+
 ## Offene Punkte (nächste Schritte)
 
-- Echte Tierfotos statt der aktuellen Kategorie-Platzhalterbilder besorgen (Bildquellen/Lizenzfragen klären)
+- [erledigt] Echte Tierfotos: 299 von 300 Tieren haben ein Wikipedia-Bild (unter `backend/app/seed/data/images/`). Nur "Ara (Papagei)" hat kein Bild (Klammern im Namen verhindern das Matching).
 - Migration auf PostgreSQL, sobald Mehrbenutzerbetrieb produktiv wird
 
 ## Docker bauen

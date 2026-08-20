@@ -27,6 +27,7 @@
 - **Cooldown is shared** — one pool (`ANIMAL_COOLDOWN_DAYS`, default 5) covers both Weiterklick and Tages-Tier. No per-feature cooldown.
 - **Tages-Tier is persisted** at first request, not recalculated. Recalculating would shift the cooldown pool.
 - **Six fields are nullable** — `fun_fact`, `superpower`, `mating_season`, `nest_building`, `courtship_dance`, `relationship_status`. See ADR 0006.
+- **Images keyed by name_de** — file names and mapping use German common names (lowercase, underscores), not scientific names
 
 ## Architecture (read these for depth)
 
@@ -34,3 +35,11 @@
 - `CONTEXT.md` — domain glossary (Steckbrief, Tages-Tier, Weiterklick, Cooldown, Gesehen, etc.)
 - `docs/adr/` — 6 ADRs covering SQLite, JWT, "Sehen = Sammeln", Docker single-container, seed mapping, nullable fields
 - `tierlexikon-app-projektskizze.md` — original project sketch
+
+## Seed data & images
+
+- `backend/app/seed/data/tierlexikon_steckbriefe.json` — 300 animal profiles (JSON)
+- `backend/app/seed/data/animal_images.json` — maps `name_de` → `{ image_path, source }`
+- `backend/app/seed/data/images/` — 299 Wikipedia images as JPG, named `{name_de_klein}.jpg`
+- `backend/app/seed/data/download_wikipedia_images.py` — re-download script (rate-limited, ~5 min). Searches singular first, then plural variants, then scientific name.
+- 1 animal has no image ("Ara (Papagei)" — parentheses in name prevent matching)
