@@ -1,3 +1,4 @@
+import mimetypes
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -9,6 +10,10 @@ from app.config import get_settings
 from app.routers import animals, auth, categories, daily_animal, discover, progress, quiz
 
 settings = get_settings()
+
+# Python's mimetypes module doesn't know .webp on all platforms (e.g. Debian slim).
+# Register it explicitly so FileResponse / StaticFiles serve the correct Content-Type.
+mimetypes.add_type("image/webp", ".webp")
 
 app = FastAPI(title="Petras fabelhaftes Tierlexikon", version="0.1.0")
 
@@ -41,6 +46,7 @@ FRONTEND_DIST = Path(__file__).parent / "static_frontend"
 
 if FRONTEND_DIST.is_dir():
     app.mount("/assets", StaticFiles(directory=FRONTEND_DIST / "assets"), name="frontend-assets")
+    app.mount("/images", StaticFiles(directory=FRONTEND_DIST / "images"), name="frontend-images")
 
     @app.get("/{full_path:path}", include_in_schema=False)
     def serve_frontend(full_path: str):
