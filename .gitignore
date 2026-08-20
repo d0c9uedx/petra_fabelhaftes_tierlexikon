@@ -21,3 +21,4 @@ frontend/.env
 Thumbs.db
 frontend/tsconfig.tsbuildinfo
 *.jpg
+*.webp

@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { markAnimalSeen } from "../api/animals";
+import ImageLightbox from "./ImageLightbox";
 import type { Animal, RelationshipStatus } from "../types";
 
 const REPRODUCTION_LABELS: Record<Animal["reproduction_mode"], string> = {
@@ -27,6 +28,8 @@ const UNBEKANNT = "Noch unbekannt";
  * und DiscoverPage.
  */
 export default function AnimalProfile({ animal }: { animal: Animal }) {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   useEffect(() => {
     markAnimalSeen(animal.id).catch(() => {
       // Best-effort: schlägt der Aufruf fehl, bleibt der Steckbrief trotzdem lesbar.
@@ -35,7 +38,19 @@ export default function AnimalProfile({ animal }: { animal: Animal }) {
 
   return (
     <article className="animal-profile">
-      <img src={animal.image_url} alt={animal.name_de} className="animal-profile-image" />
+      <img
+        src={animal.image_url}
+        alt={animal.name_de}
+        className="animal-profile-image"
+        onClick={() => setLightboxOpen(true)}
+      />
+      {lightboxOpen && (
+        <ImageLightbox
+          src={animal.image_url}
+          alt={animal.name_de}
+          onClose={() => setLightboxOpen(false)}
+        />
+      )}
       <h2>{animal.name_de}</h2>
       <p className="animal-profile-scientific">{animal.name_scientific}</p>
 

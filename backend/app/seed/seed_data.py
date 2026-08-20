@@ -1,10 +1,13 @@
 """Befüllt die Datenbank mit den 300 Steckbriefen aus data/tierlexikon_steckbriefe.json.
 
-Die Quelldatei liefert pro Tier größtenteils Freitext (siehe `tierlexikon-app-projektskizze.md`),
-kein festes Vokabular für `fortpflanzung`/`gesellschaftsleben` und keine Bild-URLs. Die
-Zuordnung auf die strikten Modell-Enums (`ReproductionMode`, `SocialBehavior`) sowie die
-Bild-Platzhalter-Strategie sind bewusste, dokumentierte Entscheidungen — siehe
-docs/adr/0005-tierdaten-mapping-heuristik.md für die Begründung und Grenzfälle.
+Die Quelldatei liefert pro Tier größtenteils Freitext (siehe `tierlexikon-app-projektskizze.md`)
+und kein festes Vokabular für `fortpflanzung`/`gesellschaftsleben`. Die Zuordnung auf die
+strikten Modell-Enums (`ReproductionMode`, `SocialBehavior`) ist eine bewusste, dokumentierte
+Entscheidung — siehe docs/adr/0005-tierdaten-mapping-heuristik.md für die Begründung und
+Grenzfälle. Echte Bild-URLs kommen separat aus `data/animal_images.json`
+(name_de -> Wikipedia-Foto, siehe `data/prepare_animal_images.py`); Tiere ohne Treffer dort
+fallen auf das Kategorie-Platzhalter-SVG aus ADR 0005 zurück — siehe
+docs/adr/0007-echte-tierfotos.md.
 
 Die sechs neuen "Liebesleben"/Charakter-Zusatzfelder (`funfakt`, `superkraft`, `balzzeit`,
 `nestbau`, `tanz_der_liebe`, `beziehungsstatus`) sind dagegen direkt mit dem passenden
@@ -28,6 +31,7 @@ from app.models.animal import (
 )
 
 DATA_FILE = Path(__file__).parent / "data" / "tierlexikon_steckbriefe.json"
+IMAGE_MAPPING_FILE = Path(__file__).parent / "data" / "animal_images.json"
 
 # JSON-`kategorie` -> AnimalCategory. "Nicht-Säugetier" entspricht der Projektskizze-
 # Kategorie "sonstige Landtiere (Nicht-Säugetiere)", z. B. Reptilien, Amphibien, Wirbellose.
@@ -83,7 +87,28 @@ def _map_social_behavior(name_de: str, gesellschaftsleben: str) -> SocialBehavio
     return SocialBehavior.SOLITARY
 
 
-def _image_url(category: AnimalCategory) -> str:
+def _load_image_map() -> dict[str, str]:
+    """name_de -> Dateiname unter frontend/public/images/animals/, für Tiere mit
+    echtem Foto (siehe backend/app/seed/data/prepare_animal_images.py). Tiere ohne
+    Treffer (image_path == "nicht gefunden") fehlen bewusst in der Map und fallen
+    unten auf das Kategorie-Platzhalter-SVG zurück."""
+    if not IMAGE_MAPPING_FILE.is_file():
+        return {}
+    with IMAGE_MAPPING_FILE.open(encoding="utf-8") as f:
+        raw = json.load(f)
+    return {
+        name_de: f"{Path(entry['image_path']).stem}.webp"
+        for name_de, entry in raw.items()
+        if entry.get("image_path") and entry["image_path"] != "nicht gefunden"
+    }
+
+
+IMAGE_MAP: dict[str, str] = _load_image_map()
+
+
+def _image_url(name_de: str, category: AnimalCategory) -> str:
+    if name_de in IMAGE_MAP:
+        return f"/images/animals/{IMAGE_MAP[name_de]}"
     return f"/images/placeholder-{category.value}.svg"
 
 
@@ -97,7 +122,7 @@ def _load_animals() -> list[dict]:
         animals.append(dict(
             name_de=entry["name_de"],
             name_scientific=entry["name_wiss"],
-            image_url=_image_url(category),
+            image_url=_image_url(entry["name_de"], category),
             category=category,
             home_turf=entry["zuhause"],
             conservation_status=entry["status"],
