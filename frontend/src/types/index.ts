@@ -3,7 +3,8 @@ export type AnimalCategory =
   | "fisch"
   | "insekt"
   | "saeugetier"
-  | "sonstiges_landtier";
+  | "sonstiges_landtier"
+  | "fabelwesen";
 
 export interface Category {
   value: AnimalCategory;
@@ -26,6 +27,8 @@ export interface Animal {
   name_scientific: string;
   image_url: string;
   category: AnimalCategory;
+  genus: string | null;
+  family: string | null;
   home_turf: string;
   conservation_status: string;
   reproduction_mode: "egg_laying" | "live_bearing";
