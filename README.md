@@ -51,11 +51,11 @@ App läuft dann unter http://localhost:5173 (Backend muss parallel laufen).
 
 ## Kern-Features in diesem Entwurf
 
-1. Kategorie-Browsing
+1. Kategorie-Browsing (6 Kategorien, inkl. neu vorbereiteter Kategorie "Fabelwesen")
 2. Tages-Tier (pro Nutzer, stabil über den Tag)
 3. Weiterklick mit Cooldown-Logik
 4. Sammel-Fortschritt (= gesehene Tiere)
-5. Quiz mit vereinfachtem Spaced-Repetition-Algorithmus (SM-2-artig)
+5. Quiz mit vereinfachtem Spaced-Repetition-Algorithmus (SM-2-artig); Antwortoptionen kommen ausschließlich aus derselben Kategorie wie das gefragte Tier
 6. Mehrbenutzer-Login (Benutzername/Passwort, JWT)
 
 ## Tierbilder
@@ -69,6 +69,7 @@ Für 299 der 300 Tiere liegen Wikipedia-Bilder als JPG vor:
 ## Offene Punkte (nächste Schritte)
 
 - [erledigt] Echte Tierfotos: 299 von 300 Tieren haben ein Wikipedia-Bild (unter `backend/app/seed/data/images/`). Nur "Ara (Papagei)" hat kein Bild (Klammern im Namen verhindern das Matching).
+- Gattung/Familie (Taxonomie-Felder) sind im Modell vorbereitet, aber für die 300 Bestandstiere noch nicht befüllt (siehe [docs/adr/0009-taxonomie-felder-gattung-familie.md](./docs/adr/0009-taxonomie-felder-gattung-familie.md)) — zeigen bis dahin "Noch unbekannt" im Steckbrief.
 - Migration auf PostgreSQL, sobald Mehrbenutzerbetrieb produktiv wird
 
 ## Docker bauen

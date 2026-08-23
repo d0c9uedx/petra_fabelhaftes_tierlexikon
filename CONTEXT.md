@@ -5,7 +5,7 @@ Ein digitales Tierlexikon: Nutzer:innen durchstöbern Tiere nach Kategorien, seh
 ## Language
 
 **Steckbrief**:
-Die kompakte Profil-Darstellung eines Tiers mit allen Datenfeldern (Name, wissenschaftlicher Name, Kategorie, Zuhause, Gefährdungsstatus, Fortpflanzung, Wartezeit aufs Baby, Kinderschar, Lieblingsspeise, Erzfeinde, Gesellschaftsleben, Persönlichkeit, Superkraft, Funfakt, Balzzeit, Nestbau, Tanz der Liebe, Beziehungsstatus).
+Die kompakte Profil-Darstellung eines Tiers mit allen Datenfeldern (Name, wissenschaftlicher Name, Kategorie, Gattung, Familie, Zuhause, Gefährdungsstatus, Fortpflanzung, Wartezeit aufs Baby, Kinderschar, Lieblingsspeise, Erzfeinde, Gesellschaftsleben, Persönlichkeit, Superkraft, Funfakt, Balzzeit, Nestbau, Tanz der Liebe, Beziehungsstatus). Gattung und Familie stehen als Taxonomie-Felder ganz oben im Steckbrief; sie sind nullable und zeigen bis zur Nachpflege der Bestandstiere "Noch unbekannt" (siehe [docs/adr/0009-taxonomie-felder-gattung-familie.md](./docs/adr/0009-taxonomie-felder-gattung-familie.md)).
 _Avoid_: Profil, Karte, Datenblatt
 
 **Beziehungsstatus**:
@@ -17,7 +17,7 @@ Die Verteidigungs- oder Überlebensstrategie eines Tiers, insbesondere gegen sei
 _Avoid_: Fähigkeit, Talent
 
 **Kategorie**:
-Eine von fünf festen Gruppen, nach denen Tiere eingeordnet und gefiltert werden: Vögel, Fische, Käfer/Insekten, Säugetiere, sonstige Landtiere.
+Eine von sechs festen Gruppen, nach denen Tiere eingeordnet und gefiltert werden: Vögel, Fische, Käfer/Insekten, Säugetiere, sonstige Landtiere, Fabelwesen. Die Kategorie bestimmt zugleich den Auswahlpool für Quiz-Distraktoren — falsche Antwortoptionen kommen ausschließlich aus derselben Kategorie wie das gefragte Tier.
 _Avoid_: Klasse, Typ, Gruppe
 
 **Tages-Tier**:
