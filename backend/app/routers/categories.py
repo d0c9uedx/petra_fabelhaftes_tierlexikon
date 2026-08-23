@@ -12,6 +12,7 @@ CATEGORY_LABELS: dict[AnimalCategory, str] = {
     AnimalCategory.INSEKT: "Käfer / Insekten",
     AnimalCategory.SAEUGETIER: "Säugetiere",
     AnimalCategory.SONSTIGES_LANDTIER: "Sonstige Landtiere",
+    AnimalCategory.FABELWESEN: "Fabelwesen",
 }
 
 

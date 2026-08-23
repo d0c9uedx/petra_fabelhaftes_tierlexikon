@@ -42,7 +42,9 @@ export default function QuizPage() {
             question={question}
             onAnswer={(selectedId) => submitAnswer(question.animal.id, selectedId)}
           />
-          <button onClick={loadNext}>Nächste Frage ➜</button>
+          <button className="quiz-next-button" onClick={loadNext}>
+            Nächste Frage ➜
+          </button>
         </>
       ) : (
         <p>Lädt…</p>

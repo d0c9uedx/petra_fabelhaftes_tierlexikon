@@ -18,7 +18,7 @@ def test_unauthenticated_request_is_rejected(client):
 def test_category_browsing(client, auth_headers):
     response = client.get("/categories", headers=auth_headers)
     assert response.status_code == 200
-    assert len(response.json()) == 5
+    assert len(response.json()) == 6
 
     response = client.get("/animals?category=saeugetier", headers=auth_headers)
     assert response.status_code == 200
@@ -77,3 +77,14 @@ def test_quiz_flow_updates_spaced_repetition(client, auth_headers):
     body = response.json()
     assert body["correct"] is False
     assert body["repetitions"] == 0
+
+
+def test_quiz_options_are_from_the_same_category(client, auth_headers):
+    categories_by_id = {a["id"]: a["category"] for a in client.get("/animals", headers=auth_headers).json()}
+
+    question = client.get("/quiz/next", headers=auth_headers).json()
+    target_category = categories_by_id[question["animal"]["id"]]
+    option_ids = [o["animal_id"] for o in question["options"]]
+
+    assert len(option_ids) == 4
+    assert all(categories_by_id[oid] == target_category for oid in option_ids)

@@ -15,6 +15,7 @@ class AnimalCategory(str, enum.Enum):
     INSEKT = "insekt"
     SAEUGETIER = "saeugetier"
     SONSTIGES_LANDTIER = "sonstiges_landtier"
+    FABELWESEN = "fabelwesen"
 
 
 class ReproductionMode(str, enum.Enum):
@@ -39,6 +40,8 @@ class Animal(Base):
     Die sechs "Liebesleben"/Charakter-Zusatzfelder (fun_fact, superpower,
     mating_season, nest_building, courtship_dance, relationship_status) sind
     bewusst nullable — siehe docs/adr/0006-neue-steckbrief-felder-nullable.md.
+    Auch die Taxonomie-Felder (genus, family) sind nullable — siehe
+    docs/adr/0009-taxonomie-felder-gattung-familie.md.
     """
 
     __tablename__ = "animals"
@@ -48,6 +51,11 @@ class Animal(Base):
     name_scientific: Mapped[str] = mapped_column(String(160), nullable=False)
     image_url: Mapped[str] = mapped_column(String(500), nullable=False)
     category: Mapped[AnimalCategory] = mapped_column(Enum(AnimalCategory), nullable=False, index=True)
+
+    # Taxonomie. Bei Fabelwesen bewusst fiktiv (Pseudo-Latein), siehe
+    # docs/adr/0009-taxonomie-felder-gattung-familie.md.
+    genus: Mapped[str | None] = mapped_column(String(120), nullable=True)
+    family: Mapped[str | None] = mapped_column(String(120), nullable=True)
 
     home_turf: Mapped[str] = mapped_column(Text, nullable=False)
     conservation_status: Mapped[str] = mapped_column(String(120), nullable=False)

@@ -47,7 +47,7 @@ def next_question(db: Session = Depends(get_db), current_user: User = Depends(ge
 
     others = (
         db.query(Animal)
-        .filter(Animal.id != target.id)
+        .filter(Animal.id != target.id, Animal.category == target.category)
         .order_by(Animal.id)
         .all()
     )

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { markAnimalSeen } from "../api/animals";
 import ImageLightbox from "./ImageLightbox";
 import type { Animal, RelationshipStatus } from "../types";
@@ -29,6 +30,7 @@ const UNBEKANNT = "Noch unbekannt";
  */
 export default function AnimalProfile({ animal }: { animal: Animal }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     markAnimalSeen(animal.id).catch(() => {
@@ -38,6 +40,13 @@ export default function AnimalProfile({ animal }: { animal: Animal }) {
 
   return (
     <article className="animal-profile">
+      <button
+        type="button"
+        className="animal-profile-back"
+        onClick={() => navigate(-1)}
+      >
+        ← Zurück
+      </button>
       <img
         src={animal.image_url}
         alt={animal.name_de}
@@ -55,6 +64,12 @@ export default function AnimalProfile({ animal }: { animal: Animal }) {
       <p className="animal-profile-scientific">{animal.name_scientific}</p>
 
       <dl className="animal-profile-facts">
+        <dt>Gattung</dt>
+        <dd>{animal.genus ?? UNBEKANNT}</dd>
+
+        <dt>Familie</dt>
+        <dd>{animal.family ?? UNBEKANNT}</dd>
+
         <dt>Zuhause</dt>
         <dd>{animal.home_turf}</dd>
 

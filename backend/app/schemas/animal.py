@@ -16,6 +16,8 @@ class AnimalOut(BaseModel):
     name_scientific: str
     image_url: str
     category: AnimalCategory
+    genus: str | None
+    family: str | None
     home_turf: str
     conservation_status: str
     reproduction_mode: ReproductionMode

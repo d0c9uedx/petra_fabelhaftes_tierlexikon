@@ -21,7 +21,7 @@
   },
   "Star": {
     "image_path": "images/star.jpg",
-    "source": "https://en.wikipedia.org/wiki/Star"
+    "source": "https://de.wikipedia.org/wiki/Star_(Art)"
   },
   "Haussperling": {
     "image_path": "images/haussperling.jpg",
@@ -53,7 +53,7 @@
   },
   "Kuckuck": {
     "image_path": "images/kuckuck.jpg",
-    "source": "https://en.wikipedia.org/wiki/Kuckuck_Schallplatten"
+    "source": "https://de.wikipedia.org/wiki/Kuckuck"
   },
   "Waldkauz": {
     "image_path": "images/waldkauz.jpg",
@@ -109,7 +109,7 @@
   },
   "Strauß": {
     "image_path": "images/strauß.jpg",
-    "source": "https://en.wikipedia.org/wiki/Strauss"
+    "source": "https://de.wikipedia.org/wiki/Afrikanischer_Strau%C3%9F"
   },
   "Kolibri": {
     "image_path": "images/kolibri.jpg",
@@ -529,11 +529,11 @@
   },
   "Wespe": {
     "image_path": "images/wespe.jpg",
-    "source": "https://en.wikipedia.org/wiki/Wespe"
+    "source": "https://de.wikipedia.org/wiki/Wespe"
   },
   "Hornisse": {
     "image_path": "images/hornisse.jpg",
-    "source": "https://en.wikipedia.org/wiki/Nashorn"
+    "source": "https://de.wikipedia.org/wiki/Nashorn"
   },
   "Ameise": {
     "image_path": "images/ameise.jpg",
@@ -553,11 +553,11 @@
   },
   "Heuschrecke": {
     "image_path": "images/heuschrecke.jpg",
-    "source": "https://en.wikipedia.org/wiki/Heuschrecke_10"
+    "source": "https://de.wikipedia.org/wiki/Heuschrecken"
   },
   "Grille": {
     "image_path": "images/grille.jpg",
-    "source": "https://en.wikipedia.org/wiki/Fantasiest%C3%BCcke%2C_Op._12"
+    "source": "https://de.wikipedia.org/wiki/Echte_Grillen"
   },
   "Gottesanbeterin": {
     "image_path": "images/gottesanbeterin.jpg",
