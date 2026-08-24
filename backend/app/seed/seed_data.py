@@ -16,6 +16,15 @@ deshalb 1:1 auf den `RelationshipStatus`-Enum abgebildet, ohne Heuristik. Fehlt 
 Information (auch nach Recherche), bleibt der JSON-Wert `null` — siehe
 docs/adr/0006-neue-steckbrief-felder-nullable.md.
 
+Gattung/Familie (`genus`/`family`) kommen aus einer eigenen Datei, `data/tierlexikon_taxonomie.json`
+(name_de -> {"gattung", "familie"}), statt direkt aus der Steckbrief-Quelle — analog zu den
+Bild-URLs aus `animal_images.json`. Für die 300 Bestandstiere sind dort reale taxonomische
+Angaben recherchiert; bei echten Unsicherheiten (z. B. Gruppen-/Ordnungs-Sammelbegriffe wie
+"Skorpione" oder "Tausendfüßer" ohne eindeutige Art) bleibt der Wert bewusst `null` statt
+geraten — siehe docs/adr/0009-taxonomie-felder-gattung-familie.md. Für die neue Kategorie
+`Fabelwesen` sind Gattung/Familie in derselben Datei ebenso bewusst fiktiv (Pseudo-Latein,
+z. B. "Lycanthropus"/"Hominidae fabulosa" beim Werwolf) statt real, wie in ADR 0009 vorgesehen.
+
 Ausführen mit: python -m app.seed.seed_data
 """
 import json
@@ -32,15 +41,18 @@ from app.models.animal import (
 
 DATA_FILE = Path(__file__).parent / "data" / "tierlexikon_steckbriefe.json"
 IMAGE_MAPPING_FILE = Path(__file__).parent / "data" / "animal_images.json"
+TAXONOMY_FILE = Path(__file__).parent / "data" / "tierlexikon_taxonomie.json"
 
 # JSON-`kategorie` -> AnimalCategory. "Nicht-Säugetier" entspricht der Projektskizze-
 # Kategorie "sonstige Landtiere (Nicht-Säugetiere)", z. B. Reptilien, Amphibien, Wirbellose.
+# "Fabelwesen" ist die in ADR 0009 vorbereitete, hier erstmals befüllte Kategorie.
 CATEGORY_MAP = {
     "Vogel": AnimalCategory.VOGEL,
     "Fisch": AnimalCategory.FISCH,
     "Insekt": AnimalCategory.INSEKT,
     "Säugetier": AnimalCategory.SAEUGETIER,
     "Nicht-Säugetier": AnimalCategory.SONSTIGES_LANDTIER,
+    "Fabelwesen": AnimalCategory.FABELWESEN,
 }
 
 # Manueller Sonderfall: der einzige Eintrag, dessen `fortpflanzung`-Text nicht eindeutig
@@ -106,6 +118,18 @@ def _load_image_map() -> dict[str, str]:
 IMAGE_MAP: dict[str, str] = _load_image_map()
 
 
+def _load_taxonomy_map() -> dict[str, dict[str, str | None]]:
+    """name_de -> {"gattung": ..., "familie": ...}, siehe Moduldocstring. Fehlt die Datei
+    oder ein Eintrag, bleiben genus/family `None` ("Noch unbekannt" im Frontend)."""
+    if not TAXONOMY_FILE.is_file():
+        return {}
+    with TAXONOMY_FILE.open(encoding="utf-8") as f:
+        return json.load(f)
+
+
+TAXONOMY_MAP: dict[str, dict[str, str | None]] = _load_taxonomy_map()
+
+
 def _image_url(name_de: str, category: AnimalCategory) -> str:
     if name_de in IMAGE_MAP:
         return f"/images/animals/{IMAGE_MAP[name_de]}"
@@ -119,11 +143,14 @@ def _load_animals() -> list[dict]:
     animals = []
     for entry in raw:
         category = _map_category(entry["kategorie"])
+        taxonomy = TAXONOMY_MAP.get(entry["name_de"], {})
         animals.append(dict(
             name_de=entry["name_de"],
             name_scientific=entry["name_wiss"],
             image_url=_image_url(entry["name_de"], category),
             category=category,
+            genus=taxonomy.get("gattung"),
+            family=taxonomy.get("familie"),
             home_turf=entry["zuhause"],
             conservation_status=entry["status"],
             reproduction_mode=_map_reproduction(entry["name_de"], entry["fortpflanzung"]),

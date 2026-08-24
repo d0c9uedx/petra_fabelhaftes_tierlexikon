@@ -1,0 +1,1242 @@
+{
+  "Hausrotschwanz": {
+    "gattung": "Phoenicurus",
+    "familie": "Muscicapidae"
+  },
+  "Amsel": {
+    "gattung": "Turdus",
+    "familie": "Turdidae"
+  },
+  "Kohlmeise": {
+    "gattung": "Parus",
+    "familie": "Paridae"
+  },
+  "Blaumeise": {
+    "gattung": "Cyanistes",
+    "familie": "Paridae"
+  },
+  "Rotkehlchen": {
+    "gattung": "Erithacus",
+    "familie": "Muscicapidae"
+  },
+  "Star": {
+    "gattung": "Sturnus",
+    "familie": "Sturnidae"
+  },
+  "Haussperling": {
+    "gattung": "Passer",
+    "familie": "Passeridae"
+  },
+  "Elster": {
+    "gattung": "Pica",
+    "familie": "Corvidae"
+  },
+  "Rabenkrähe": {
+    "gattung": "Corvus",
+    "familie": "Corvidae"
+  },
+  "Buchfink": {
+    "gattung": "Fringilla",
+    "familie": "Fringillidae"
+  },
+  "Mauersegler": {
+    "gattung": "Apus",
+    "familie": "Apodidae"
+  },
+  "Rauchschwalbe": {
+    "gattung": "Hirundo",
+    "familie": "Hirundinidae"
+  },
+  "Mehlschwalbe": {
+    "gattung": "Delichon",
+    "familie": "Hirundinidae"
+  },
+  "Kuckuck": {
+    "gattung": "Cuculus",
+    "familie": "Cuculidae"
+  },
+  "Waldkauz": {
+    "gattung": "Strix",
+    "familie": "Strigidae"
+  },
+  "Steinadler": {
+    "gattung": "Aquila",
+    "familie": "Accipitridae"
+  },
+  "Weißkopfseeadler": {
+    "gattung": "Haliaeetus",
+    "familie": "Accipitridae"
+  },
+  "Turmfalke": {
+    "gattung": "Falco",
+    "familie": "Falconidae"
+  },
+  "Mäusebussard": {
+    "gattung": "Buteo",
+    "familie": "Accipitridae"
+  },
+  "Graureiher": {
+    "gattung": "Ardea",
+    "familie": "Ardeidae"
+  },
+  "Weißstorch": {
+    "gattung": "Ciconia",
+    "familie": "Ciconiidae"
+  },
+  "Höckerschwan": {
+    "gattung": "Cygnus",
+    "familie": "Anatidae"
+  },
+  "Stockente": {
+    "gattung": "Anas",
+    "familie": "Anatidae"
+  },
+  "Graugans": {
+    "gattung": "Anser",
+    "familie": "Anatidae"
+  },
+  "Pfau": {
+    "gattung": "Pavo",
+    "familie": "Phasianidae"
+  },
+  "Flamingo": {
+    "gattung": "Phoenicopterus",
+    "familie": "Phoenicopteridae"
+  },
+  "Kaiserpinguin": {
+    "gattung": "Aptenodytes",
+    "familie": "Spheniscidae"
+  },
+  "Strauß": {
+    "gattung": "Struthio",
+    "familie": "Struthionidae"
+  },
+  "Kolibri": {
+    "gattung": null,
+    "familie": "Trochilidae"
+  },
+  "Ara (Papagei)": {
+    "gattung": "Ara",
+    "familie": "Psittacidae"
+  },
+  "Pirol": {
+    "gattung": "Oriolus",
+    "familie": "Oriolidae"
+  },
+  "Zaunkönig": {
+    "gattung": "Troglodytes",
+    "familie": "Troglodytidae"
+  },
+  "Bluthänfling": {
+    "gattung": "Linaria",
+    "familie": "Fringillidae"
+  },
+  "Grünfink": {
+    "gattung": "Chloris",
+    "familie": "Fringillidae"
+  },
+  "Stieglitz": {
+    "gattung": "Carduelis",
+    "familie": "Fringillidae"
+  },
+  "Gimpel": {
+    "gattung": "Pyrrhula",
+    "familie": "Fringillidae"
+  },
+  "Wacholderdrossel": {
+    "gattung": "Turdus",
+    "familie": "Turdidae"
+  },
+  "Singdrossel": {
+    "gattung": "Turdus",
+    "familie": "Turdidae"
+  },
+  "Wiedehopf": {
+    "gattung": "Upupa",
+    "familie": "Upupidae"
+  },
+  "Eisvogel": {
+    "gattung": "Alcedo",
+    "familie": "Alcedinidae"
+  },
+  "Buntspecht": {
+    "gattung": "Dendrocopos",
+    "familie": "Picidae"
+  },
+  "Schwarzspecht": {
+    "gattung": "Dryocopus",
+    "familie": "Picidae"
+  },
+  "Uhu": {
+    "gattung": "Bubo",
+    "familie": "Strigidae"
+  },
+  "Schleiereule": {
+    "gattung": "Tyto",
+    "familie": "Tytonidae"
+  },
+  "Waldohreule": {
+    "gattung": "Asio",
+    "familie": "Strigidae"
+  },
+  "Fasan": {
+    "gattung": "Phasianus",
+    "familie": "Phasianidae"
+  },
+  "Rebhuhn": {
+    "gattung": "Perdix",
+    "familie": "Phasianidae"
+  },
+  "Wachtel": {
+    "gattung": "Coturnix",
+    "familie": "Phasianidae"
+  },
+  "Kranich": {
+    "gattung": "Grus",
+    "familie": "Gruidae"
+  },
+  "Löffler": {
+    "gattung": "Platalea",
+    "familie": "Threskiornithidae"
+  },
+  "Austernfischer": {
+    "gattung": "Haematopus",
+    "familie": "Haematopodidae"
+  },
+  "Silbermöwe": {
+    "gattung": "Larus",
+    "familie": "Laridae"
+  },
+  "Basstölpel": {
+    "gattung": "Morus",
+    "familie": "Sulidae"
+  },
+  "Papageitaucher": {
+    "gattung": "Fratercula",
+    "familie": "Alcidae"
+  },
+  "Albatros": {
+    "gattung": "Diomedea",
+    "familie": "Diomedeidae"
+  },
+  "Andenkondor": {
+    "gattung": "Vultur",
+    "familie": "Cathartidae"
+  },
+  "Emu": {
+    "gattung": "Dromaius",
+    "familie": "Dromaiidae"
+  },
+  "Kiwi": {
+    "gattung": "Apteryx",
+    "familie": "Apterygidae"
+  },
+  "Sekretär": {
+    "gattung": "Sagittarius",
+    "familie": "Sagittariidae"
+  },
+  "Marabu": {
+    "gattung": "Leptoptilos",
+    "familie": "Ciconiidae"
+  },
+  "Karpfen": {
+    "gattung": "Cyprinus",
+    "familie": "Cyprinidae"
+  },
+  "Forelle": {
+    "gattung": "Salmo",
+    "familie": "Salmonidae"
+  },
+  "Hecht": {
+    "gattung": "Esox",
+    "familie": "Esocidae"
+  },
+  "Zander": {
+    "gattung": "Sander",
+    "familie": "Percidae"
+  },
+  "Barsch": {
+    "gattung": "Perca",
+    "familie": "Percidae"
+  },
+  "Wels": {
+    "gattung": "Silurus",
+    "familie": "Siluridae"
+  },
+  "Aal": {
+    "gattung": "Anguilla",
+    "familie": "Anguillidae"
+  },
+  "Hering": {
+    "gattung": "Clupea",
+    "familie": "Clupeidae"
+  },
+  "Kabeljau": {
+    "gattung": "Gadus",
+    "familie": "Gadidae"
+  },
+  "Thunfisch": {
+    "gattung": "Thunnus",
+    "familie": "Scombridae"
+  },
+  "Lachs": {
+    "gattung": "Salmo",
+    "familie": "Salmonidae"
+  },
+  "Seezunge": {
+    "gattung": "Solea",
+    "familie": "Soleidae"
+  },
+  "Makrele": {
+    "gattung": "Scomber",
+    "familie": "Scombridae"
+  },
+  "Sardine": {
+    "gattung": "Sardina",
+    "familie": "Clupeidae"
+  },
+  "Goldfisch": {
+    "gattung": "Carassius",
+    "familie": "Cyprinidae"
+  },
+  "Guppy": {
+    "gattung": "Poecilia",
+    "familie": "Poeciliidae"
+  },
+  "Zebrabärbling": {
+    "gattung": "Danio",
+    "familie": "Cyprinidae"
+  },
+  "Diskusfisch": {
+    "gattung": "Symphysodon",
+    "familie": "Cichlidae"
+  },
+  "Clownfisch": {
+    "gattung": "Amphiprion",
+    "familie": "Pomacentridae"
+  },
+  "Kaiserangelfisch": {
+    "gattung": "Pomacanthus",
+    "familie": "Pomacanthidae"
+  },
+  "Rochen": {
+    "gattung": null,
+    "familie": null
+  },
+  "Hammerhai": {
+    "gattung": "Sphyrna",
+    "familie": "Sphyrnidae"
+  },
+  "Weißer Hai": {
+    "gattung": "Carcharodon",
+    "familie": "Lamnidae"
+  },
+  "Seepferdchen": {
+    "gattung": "Hippocampus",
+    "familie": "Syngnathidae"
+  },
+  "Kugelfisch": {
+    "gattung": null,
+    "familie": "Tetraodontidae"
+  },
+  "Piranha": {
+    "gattung": "Pygocentrus",
+    "familie": "Characidae"
+  },
+  "Koi": {
+    "gattung": "Cyprinus",
+    "familie": "Cyprinidae"
+  },
+  "Marlin": {
+    "gattung": null,
+    "familie": "Istiophoridae"
+  },
+  "Schwertfisch": {
+    "gattung": "Xiphias",
+    "familie": "Xiphiidae"
+  },
+  "Anglerfisch": {
+    "gattung": null,
+    "familie": "Lophiidae"
+  },
+  "Stör": {
+    "gattung": "Acipenser",
+    "familie": "Acipenseridae"
+  },
+  "Elritze": {
+    "gattung": "Phoxinus",
+    "familie": "Leuciscidae"
+  },
+  "Döbel": {
+    "gattung": "Squalius",
+    "familie": "Leuciscidae"
+  },
+  "Rotauge": {
+    "gattung": "Rutilus",
+    "familie": "Leuciscidae"
+  },
+  "Schleie": {
+    "gattung": "Tinca",
+    "familie": "Cyprinidae"
+  },
+  "Wolfsbarsch": {
+    "gattung": "Dicentrarchus",
+    "familie": "Moronidae"
+  },
+  "Goldbrasse": {
+    "gattung": "Sparus",
+    "familie": "Sparidae"
+  },
+  "Seelachs": {
+    "gattung": "Pollachius",
+    "familie": "Gadidae"
+  },
+  "Scholle": {
+    "gattung": "Pleuronectes",
+    "familie": "Pleuronectidae"
+  },
+  "Steinbutt": {
+    "gattung": "Scophthalmus",
+    "familie": "Scophthalmidae"
+  },
+  "Muräne": {
+    "gattung": "Muraena",
+    "familie": "Muraenidae"
+  },
+  "Zackenbarsch": {
+    "gattung": "Epinephelus",
+    "familie": "Serranidae"
+  },
+  "Papageifisch": {
+    "gattung": "Scarus",
+    "familie": "Scaridae"
+  },
+  "Segelflosser": {
+    "gattung": "Pterophyllum",
+    "familie": "Cichlidae"
+  },
+  "Neonsalmler": {
+    "gattung": "Paracheirodon",
+    "familie": "Characidae"
+  },
+  "Mondfisch": {
+    "gattung": "Mola",
+    "familie": "Molidae"
+  },
+  "Zitteraal": {
+    "gattung": "Electrophorus",
+    "familie": "Gymnotidae"
+  },
+  "Fliegender Fisch": {
+    "gattung": null,
+    "familie": "Exocoetidae"
+  },
+  "Blauhai": {
+    "gattung": "Prionace",
+    "familie": "Carcharhinidae"
+  },
+  "Ammenhai": {
+    "gattung": "Ginglymostoma",
+    "familie": "Ginglymostomatidae"
+  },
+  "Sandtigerhai": {
+    "gattung": "Carcharias",
+    "familie": "Odontaspididae"
+  },
+  "Mantarochen": {
+    "gattung": "Mobula",
+    "familie": "Myliobatidae"
+  },
+  "Barrakuda": {
+    "gattung": "Sphyraena",
+    "familie": "Sphyraenidae"
+  },
+  "Tigerhai": {
+    "gattung": "Galeocerdo",
+    "familie": "Carcharhinidae"
+  },
+  "Palettendoktorfisch": {
+    "gattung": "Paracanthurus",
+    "familie": "Acanthuridae"
+  },
+  "Sägerochen": {
+    "gattung": "Pristis",
+    "familie": "Pristidae"
+  },
+  "Buntbarsch": {
+    "gattung": null,
+    "familie": "Cichlidae"
+  },
+  "Antennenwels": {
+    "gattung": "Ancistrus",
+    "familie": "Loricariidae"
+  },
+  "Kampffisch": {
+    "gattung": "Betta",
+    "familie": "Osphronemidae"
+  },
+  "Karausche": {
+    "gattung": "Carassius",
+    "familie": "Cyprinidae"
+  },
+  "Siebenpunkt-Marienkäfer": {
+    "gattung": "Coccinella",
+    "familie": "Coccinellidae"
+  },
+  "Maikäfer": {
+    "gattung": "Melolontha",
+    "familie": "Scarabaeidae"
+  },
+  "Hirschkäfer": {
+    "gattung": "Lucanus",
+    "familie": "Lucanidae"
+  },
+  "Rosenkäfer": {
+    "gattung": "Cetonia",
+    "familie": "Scarabaeidae"
+  },
+  "Laufkäfer": {
+    "gattung": null,
+    "familie": "Carabidae"
+  },
+  "Borkenkäfer": {
+    "gattung": "Ips",
+    "familie": "Curculionidae"
+  },
+  "Kartoffelkäfer": {
+    "gattung": "Leptinotarsa",
+    "familie": "Chrysomelidae"
+  },
+  "Glühwürmchen": {
+    "gattung": "Lampyris",
+    "familie": "Lampyridae"
+  },
+  "Mistkäfer": {
+    "gattung": null,
+    "familie": "Geotrupidae"
+  },
+  "Nashornkäfer": {
+    "gattung": "Oryctes",
+    "familie": "Scarabaeidae"
+  },
+  "Honigbiene": {
+    "gattung": "Apis",
+    "familie": "Apidae"
+  },
+  "Hummel": {
+    "gattung": "Bombus",
+    "familie": "Apidae"
+  },
+  "Wespe": {
+    "gattung": "Vespula",
+    "familie": "Vespidae"
+  },
+  "Hornisse": {
+    "gattung": "Vespa",
+    "familie": "Vespidae"
+  },
+  "Ameise": {
+    "gattung": "Formica",
+    "familie": "Formicidae"
+  },
+  "Termite": {
+    "gattung": null,
+    "familie": null
+  },
+  "Florfliege": {
+    "gattung": "Chrysoperla",
+    "familie": "Chrysopidae"
+  },
+  "Libelle": {
+    "gattung": null,
+    "familie": null
+  },
+  "Heuschrecke": {
+    "gattung": null,
+    "familie": null
+  },
+  "Grille": {
+    "gattung": "Gryllus",
+    "familie": "Gryllidae"
+  },
+  "Gottesanbeterin": {
+    "gattung": "Mantis",
+    "familie": "Mantidae"
+  },
+  "Stabheuschrecke": {
+    "gattung": null,
+    "familie": null
+  },
+  "Stubenfliege": {
+    "gattung": "Musca",
+    "familie": "Muscidae"
+  },
+  "Stechmücke": {
+    "gattung": "Culex",
+    "familie": "Culicidae"
+  },
+  "Admiral (Schmetterling)": {
+    "gattung": "Vanessa",
+    "familie": "Nymphalidae"
+  },
+  "Schwalbenschwanz": {
+    "gattung": "Papilio",
+    "familie": "Papilionidae"
+  },
+  "Kohlweißling": {
+    "gattung": "Pieris",
+    "familie": "Pieridae"
+  },
+  "Monarchfalter": {
+    "gattung": "Danaus",
+    "familie": "Nymphalidae"
+  },
+  "Seidenspinner": {
+    "gattung": "Bombyx",
+    "familie": "Bombycidae"
+  },
+  "Wanderheuschrecke": {
+    "gattung": "Locusta",
+    "familie": "Acrididae"
+  },
+  "Ohrwurm": {
+    "gattung": "Forficula",
+    "familie": "Forficulidae"
+  },
+  "Feuerwanze": {
+    "gattung": "Pyrrhocoris",
+    "familie": "Pyrrhocoridae"
+  },
+  "Skorpionsfliege": {
+    "gattung": "Panorpa",
+    "familie": "Panorpidae"
+  },
+  "Eintagsfliege": {
+    "gattung": "Ephemera",
+    "familie": "Ephemeridae"
+  },
+  "Köcherfliege": {
+    "gattung": null,
+    "familie": null
+  },
+  "Kakerlake": {
+    "gattung": "Blattella",
+    "familie": "Ectobiidae"
+  },
+  "Blattlaus": {
+    "gattung": null,
+    "familie": null
+  },
+  "Zikade": {
+    "gattung": null,
+    "familie": "Cicadidae"
+  },
+  "Treiberameise": {
+    "gattung": "Dorylus",
+    "familie": "Formicidae"
+  },
+  "Feuerameise": {
+    "gattung": "Solenopsis",
+    "familie": "Formicidae"
+  },
+  "Zitronenfalter": {
+    "gattung": "Gonepteryx",
+    "familie": "Pieridae"
+  },
+  "Tagpfauenauge": {
+    "gattung": "Aglais",
+    "familie": "Nymphalidae"
+  },
+  "Kleiner Fuchs": {
+    "gattung": "Aglais",
+    "familie": "Nymphalidae"
+  },
+  "Distelfalter": {
+    "gattung": "Vanessa",
+    "familie": "Nymphalidae"
+  },
+  "Wiener Nachtpfauenauge": {
+    "gattung": "Saturnia",
+    "familie": "Saturniidae"
+  },
+  "Totenkopfschwärmer": {
+    "gattung": "Acherontia",
+    "familie": "Sphingidae"
+  },
+  "Taubenschwänzchen": {
+    "gattung": "Macroglossum",
+    "familie": "Sphingidae"
+  },
+  "Sandlaufkäfer": {
+    "gattung": "Cicindela",
+    "familie": "Carabidae"
+  },
+  "Ölkäfer": {
+    "gattung": "Meloe",
+    "familie": "Meloidae"
+  },
+  "Bombardierkäfer": {
+    "gattung": "Brachinus",
+    "familie": "Carabidae"
+  },
+  "Junikäfer": {
+    "gattung": "Amphimallon",
+    "familie": "Scarabaeidae"
+  },
+  "Weberameise": {
+    "gattung": "Oecophylla",
+    "familie": "Formicidae"
+  },
+  "Rossameise": {
+    "gattung": "Camponotus",
+    "familie": "Formicidae"
+  },
+  "Wasserläufer": {
+    "gattung": "Gerris",
+    "familie": "Gerridae"
+  },
+  "Rückenschwimmer": {
+    "gattung": "Notonecta",
+    "familie": "Notonectidae"
+  },
+  "Gelbrandkäfer": {
+    "gattung": "Dytiscus",
+    "familie": "Dytiscidae"
+  },
+  "Prachtlibelle": {
+    "gattung": "Calopteryx",
+    "familie": "Calopterygidae"
+  },
+  "Blauflügelige Ödlandschrecke": {
+    "gattung": "Oedipoda",
+    "familie": "Acrididae"
+  },
+  "Feldgrille": {
+    "gattung": "Gryllus",
+    "familie": "Gryllidae"
+  },
+  "Pillendreher": {
+    "gattung": "Scarabaeus",
+    "familie": "Scarabaeidae"
+  },
+  "Löwe": {
+    "gattung": "Panthera",
+    "familie": "Felidae"
+  },
+  "Tiger": {
+    "gattung": "Panthera",
+    "familie": "Felidae"
+  },
+  "Elefant": {
+    "gattung": "Loxodonta",
+    "familie": "Elephantidae"
+  },
+  "Giraffe": {
+    "gattung": "Giraffa",
+    "familie": "Giraffidae"
+  },
+  "Zebra": {
+    "gattung": "Equus",
+    "familie": "Equidae"
+  },
+  "Nashorn": {
+    "gattung": "Ceratotherium",
+    "familie": "Rhinocerotidae"
+  },
+  "Nilpferd": {
+    "gattung": "Hippopotamus",
+    "familie": "Hippopotamidae"
+  },
+  "Gorilla": {
+    "gattung": "Gorilla",
+    "familie": "Hominidae"
+  },
+  "Schimpanse": {
+    "gattung": "Pan",
+    "familie": "Hominidae"
+  },
+  "Braunbär": {
+    "gattung": "Ursus",
+    "familie": "Ursidae"
+  },
+  "Eisbär": {
+    "gattung": "Ursus",
+    "familie": "Ursidae"
+  },
+  "Wolf": {
+    "gattung": "Canis",
+    "familie": "Canidae"
+  },
+  "Fuchs": {
+    "gattung": "Vulpes",
+    "familie": "Canidae"
+  },
+  "Reh": {
+    "gattung": "Capreolus",
+    "familie": "Cervidae"
+  },
+  "Hirsch": {
+    "gattung": "Cervus",
+    "familie": "Cervidae"
+  },
+  "Wildschwein": {
+    "gattung": "Sus",
+    "familie": "Suidae"
+  },
+  "Igel": {
+    "gattung": "Erinaceus",
+    "familie": "Erinaceidae"
+  },
+  "Eichhörnchen": {
+    "gattung": "Sciurus",
+    "familie": "Sciuridae"
+  },
+  "Maulwurf": {
+    "gattung": "Talpa",
+    "familie": "Talpidae"
+  },
+  "Fledermaus": {
+    "gattung": null,
+    "familie": null
+  },
+  "Delfin": {
+    "gattung": "Delphinus",
+    "familie": "Delphinidae"
+  },
+  "Blauwal": {
+    "gattung": "Balaenoptera",
+    "familie": "Balaenopteridae"
+  },
+  "Orca": {
+    "gattung": "Orcinus",
+    "familie": "Delphinidae"
+  },
+  "Kapibara": {
+    "gattung": "Hydrochoerus",
+    "familie": "Caviidae"
+  },
+  "Koala": {
+    "gattung": "Phascolarctos",
+    "familie": "Phascolarctidae"
+  },
+  "Känguru": {
+    "gattung": "Macropus",
+    "familie": "Macropodidae"
+  },
+  "Panda": {
+    "gattung": "Ailuropoda",
+    "familie": "Ursidae"
+  },
+  "Waschbär": {
+    "gattung": "Procyon",
+    "familie": "Procyonidae"
+  },
+  "Otter": {
+    "gattung": "Lutra",
+    "familie": "Mustelidae"
+  },
+  "Luchs": {
+    "gattung": "Lynx",
+    "familie": "Felidae"
+  },
+  "Leopard": {
+    "gattung": "Panthera",
+    "familie": "Felidae"
+  },
+  "Gepard": {
+    "gattung": "Acinonyx",
+    "familie": "Felidae"
+  },
+  "Jaguar": {
+    "gattung": "Panthera",
+    "familie": "Felidae"
+  },
+  "Puma": {
+    "gattung": "Puma",
+    "familie": "Felidae"
+  },
+  "Hyäne": {
+    "gattung": "Crocuta",
+    "familie": "Hyaenidae"
+  },
+  "Erdmännchen": {
+    "gattung": "Suricata",
+    "familie": "Herpestidae"
+  },
+  "Wisent": {
+    "gattung": "Bison",
+    "familie": "Bovidae"
+  },
+  "Amerikanischer Bison": {
+    "gattung": "Bison",
+    "familie": "Bovidae"
+  },
+  "Elch": {
+    "gattung": "Alces",
+    "familie": "Cervidae"
+  },
+  "Rentier": {
+    "gattung": "Rangifer",
+    "familie": "Cervidae"
+  },
+  "Alpaka": {
+    "gattung": "Vicugna",
+    "familie": "Camelidae"
+  },
+  "Lama": {
+    "gattung": "Lama",
+    "familie": "Camelidae"
+  },
+  "Dromedar": {
+    "gattung": "Camelus",
+    "familie": "Camelidae"
+  },
+  "Trampeltier": {
+    "gattung": "Camelus",
+    "familie": "Camelidae"
+  },
+  "Okapi": {
+    "gattung": "Okapia",
+    "familie": "Giraffidae"
+  },
+  "Gnu": {
+    "gattung": "Connochaetes",
+    "familie": "Bovidae"
+  },
+  "Impala": {
+    "gattung": "Aepyceros",
+    "familie": "Bovidae"
+  },
+  "Springbock": {
+    "gattung": "Antidorcas",
+    "familie": "Bovidae"
+  },
+  "Warzenschwein": {
+    "gattung": "Phacochoerus",
+    "familie": "Suidae"
+  },
+  "Faultier": {
+    "gattung": "Bradypus",
+    "familie": "Bradypodidae"
+  },
+  "Ameisenbär": {
+    "gattung": "Myrmecophaga",
+    "familie": "Myrmecophagidae"
+  },
+  "Gürteltier": {
+    "gattung": "Dasypus",
+    "familie": "Dasypodidae"
+  },
+  "Stachelschwein": {
+    "gattung": "Hystrix",
+    "familie": "Hystricidae"
+  },
+  "Biber": {
+    "gattung": "Castor",
+    "familie": "Castoridae"
+  },
+  "Dachs": {
+    "gattung": "Meles",
+    "familie": "Mustelidae"
+  },
+  "Steinmarder": {
+    "gattung": "Martes",
+    "familie": "Mustelidae"
+  },
+  "Hermelin": {
+    "gattung": "Mustela",
+    "familie": "Mustelidae"
+  },
+  "Seehund": {
+    "gattung": "Phoca",
+    "familie": "Phocidae"
+  },
+  "Walross": {
+    "gattung": "Odobenus",
+    "familie": "Odobenidae"
+  },
+  "Schnabeltier": {
+    "gattung": "Ornithorhynchus",
+    "familie": "Ornithorhynchidae"
+  },
+  "Chamäleon": {
+    "gattung": null,
+    "familie": "Chamaeleonidae"
+  },
+  "Leguan": {
+    "gattung": "Iguana",
+    "familie": "Iguanidae"
+  },
+  "Bartagame": {
+    "gattung": "Pogona",
+    "familie": "Agamidae"
+  },
+  "Gecko": {
+    "gattung": null,
+    "familie": "Gekkonidae"
+  },
+  "Krokodil": {
+    "gattung": "Crocodylus",
+    "familie": "Crocodylidae"
+  },
+  "Alligator": {
+    "gattung": "Alligator",
+    "familie": "Alligatoridae"
+  },
+  "Landschildkröte": {
+    "gattung": "Testudo",
+    "familie": "Testudinidae"
+  },
+  "Boa Constrictor": {
+    "gattung": "Boa",
+    "familie": "Boidae"
+  },
+  "Klapperschlange": {
+    "gattung": "Crotalus",
+    "familie": "Viperidae"
+  },
+  "Kobra": {
+    "gattung": "Naja",
+    "familie": "Elapidae"
+  },
+  "Ringelnatter": {
+    "gattung": "Natrix",
+    "familie": "Natricidae"
+  },
+  "Blindschleiche": {
+    "gattung": "Anguis",
+    "familie": "Anguidae"
+  },
+  "Komodowaran": {
+    "gattung": "Varanus",
+    "familie": "Varanidae"
+  },
+  "Grasfrosch": {
+    "gattung": "Rana",
+    "familie": "Ranidae"
+  },
+  "Kröte": {
+    "gattung": "Bufo",
+    "familie": "Bufonidae"
+  },
+  "Feuersalamander": {
+    "gattung": "Salamandra",
+    "familie": "Salamandridae"
+  },
+  "Axolotl": {
+    "gattung": "Ambystoma",
+    "familie": "Ambystomatidae"
+  },
+  "Molch": {
+    "gattung": "Triturus",
+    "familie": "Salamandridae"
+  },
+  "Kreuzspinne": {
+    "gattung": "Araneus",
+    "familie": "Araneidae"
+  },
+  "Vogelspinne": {
+    "gattung": null,
+    "familie": "Theraphosidae"
+  },
+  "Skorpion": {
+    "gattung": null,
+    "familie": null
+  },
+  "Tausendfüßer": {
+    "gattung": null,
+    "familie": null
+  },
+  "Regenwurm": {
+    "gattung": "Lumbricus",
+    "familie": "Lumbricidae"
+  },
+  "Weinbergschnecke": {
+    "gattung": "Helix",
+    "familie": "Helicidae"
+  },
+  "Nacktschnecke": {
+    "gattung": "Arion",
+    "familie": "Arionidae"
+  },
+  "Seestern": {
+    "gattung": "Asterias",
+    "familie": "Asteriidae"
+  },
+  "Qualle": {
+    "gattung": "Aurelia",
+    "familie": "Ulmaridae"
+  },
+  "Krake": {
+    "gattung": "Octopus",
+    "familie": "Octopodidae"
+  },
+  "Krabbe": {
+    "gattung": "Carcinus",
+    "familie": "Carcinidae"
+  },
+  "Languste": {
+    "gattung": "Palinurus",
+    "familie": "Palinuridae"
+  },
+  "Nilwaran": {
+    "gattung": "Varanus",
+    "familie": "Varanidae"
+  },
+  "Anakonda": {
+    "gattung": "Eunectes",
+    "familie": "Boidae"
+  },
+  "Netzpython": {
+    "gattung": "Malayopython",
+    "familie": "Pythonidae"
+  },
+  "Königspython": {
+    "gattung": "Python",
+    "familie": "Pythonidae"
+  },
+  "Schwarze Mamba": {
+    "gattung": "Dendroaspis",
+    "familie": "Elapidae"
+  },
+  "Seeschlange": {
+    "gattung": null,
+    "familie": "Elapidae"
+  },
+  "Europäische Sumpfschildkröte": {
+    "gattung": "Emys",
+    "familie": "Emydidae"
+  },
+  "Lederschildkröte": {
+    "gattung": "Dermochelys",
+    "familie": "Dermochelyidae"
+  },
+  "Galapagos-Riesenschildkröte": {
+    "gattung": "Chelonoidis",
+    "familie": "Testudinidae"
+  },
+  "Pfeilgiftfrosch": {
+    "gattung": null,
+    "familie": "Dendrobatidae"
+  },
+  "Laubfrosch": {
+    "gattung": "Hyla",
+    "familie": "Hylidae"
+  },
+  "Ochsenfrosch": {
+    "gattung": "Lithobates",
+    "familie": "Ranidae"
+  },
+  "Alpensalamander": {
+    "gattung": "Salamandra",
+    "familie": "Salamandridae"
+  },
+  "Olm": {
+    "gattung": "Proteus",
+    "familie": "Proteidae"
+  },
+  "Blauzungenskink": {
+    "gattung": "Tiliqua",
+    "familie": "Scincidae"
+  },
+  "Basilisk": {
+    "gattung": "Basiliscus",
+    "familie": "Corytophanidae"
+  },
+  "Madagaskar-Taggecko": {
+    "gattung": "Phelsuma",
+    "familie": "Gekkonidae"
+  },
+  "Tokeh": {
+    "gattung": "Gekko",
+    "familie": "Gekkonidae"
+  },
+  "Kammspinne": {
+    "gattung": "Zoropsis",
+    "familie": "Zoropsidae"
+  },
+  "Kaiserskorpion": {
+    "gattung": "Pandinus",
+    "familie": "Scorpionidae"
+  },
+  "Hundertfüßer": {
+    "gattung": null,
+    "familie": null
+  },
+  "Kellerassel": {
+    "gattung": "Porcellio",
+    "familie": "Porcellionidae"
+  },
+  "Flusskrebs": {
+    "gattung": "Astacus",
+    "familie": "Astacidae"
+  },
+  "Einsiedlerkrebs": {
+    "gattung": "Pagurus",
+    "familie": "Paguridae"
+  },
+  "Seeigel": {
+    "gattung": null,
+    "familie": null
+  },
+  "Seegurke": {
+    "gattung": null,
+    "familie": null
+  },
+  "Kalmar": {
+    "gattung": "Loligo",
+    "familie": "Loliginidae"
+  },
+  "Pfeilschwanzkrebs": {
+    "gattung": "Limulus",
+    "familie": "Limulidae"
+  },
+  "Apfelschnecke": {
+    "gattung": "Pomacea",
+    "familie": "Ampullariidae"
+  },
+  "Hummer": {
+    "gattung": "Homarus",
+    "familie": "Nephropidae"
+  },
+  "Troll": {
+    "gattung": "Trollus",
+    "familie": "Gigantidae fabulosa"
+  },
+  "Zwerg": {
+    "gattung": "Nanus",
+    "familie": "Homunculidae fabulosa"
+  },
+  "Gnom": {
+    "gattung": "Gnomus",
+    "familie": "Homunculidae fabulosa"
+  },
+  "Kobold": {
+    "gattung": "Lar",
+    "familie": "Larvidae fabulosa"
+  },
+  "Werwolf": {
+    "gattung": "Lycanthropus",
+    "familie": "Hominidae fabulosa"
+  },
+  "Vampir": {
+    "gattung": "Sanguinarius",
+    "familie": "Hominidae fabulosa"
+  },
+  "Elf": {
+    "gattung": "Elphus",
+    "familie": "Hominidae fabulosa"
+  },
+  "Drache": {
+    "gattung": "Draco",
+    "familie": "Draconidae fabulosa"
+  },
+  "Riese": {
+    "gattung": "Gigas",
+    "familie": "Gigantidae fabulosa"
+  },
+  "Fee": {
+    "gattung": "Fata",
+    "familie": "Sylphidae fabulosa"
+  }
+}
