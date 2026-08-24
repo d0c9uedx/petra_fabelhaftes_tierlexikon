@@ -18,3 +18,14 @@ ihren fünf ursprünglichen Kategorien). Sie ist vorbereitet für künftige fikt
 Familie dann bewusst fiktiv (Pseudo-Latein) statt real wäre — ein Grund mehr, warum `genus`/`family`
 nicht pauschal als "noch zu recherchierende Datenlücke" missverstanden werden dürfen: bei Fabelwesen
 gibt es schlicht keine echte Taxonomie nachzutragen.
+
+## Update: Folgeschritt umgesetzt
+
+Der oben angekündigte Folgeschritt ist inzwischen erledigt: `backend/app/seed/data/tierlexikon_taxonomie.json`
+liefert für alle 300 Bestandstiere recherchierte Gattungs-/Familiennamen sowie für die neu befüllte
+Kategorie `Fabelwesen` (Troll, Zwerg, Gnom, Kobold, Werwolf, Vampir, Elf, Drache, Riese, Fee) bewusst
+fiktive, pseudo-lateinische Taxonomie. `seed_data.py` liest diese Datei separat ein (analog zu
+`animal_images.json`) und befüllt `genus`/`family` daraus. Bei uneindeutigen Sammelbegriffen im
+Ausgangsdatensatz (z. B. "Skorpione", "Tausendfüßer", "Libellen" ohne festgelegte Art) bleibt der
+Wert weiterhin bewusst `null` statt geraten — die nullable-Eigenschaft der Felder bleibt also auch
+nach dem Befüllen bestehen und ist kein reiner Übergangszustand.
