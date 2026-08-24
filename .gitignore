@@ -1,3 +1,6 @@
+# Root (Docker Compose Host-Port-Bindung, siehe .env.example)
+.env
+
 # Backend (Python)
 backend/.venv/
 backend/__pycache__/
